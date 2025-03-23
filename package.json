@@ -1,23 +1,92 @@
 {
   "name": "franken-ui",
-  "displayName": "franken-ui",
-  "description": "",
-  "version": "0.0.1",
+  "displayName": "Franken UI for VS Code",
+  "description": "Advanced Franken UI tooling support for Visual Studio Code.",
+  "version": "1.0.1",
+  "license": "MIT",
+  "publisher": "franken-ui",
+  "author": {
+    "name": "Franken UI",
+    "email": "reden@franken-ui.dev",
+    "url": "https://franken-ui.dev"
+  },
+  "homepage": "https://franken-ui.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/franken-ui/vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/franken-ui/vscode/issues"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/sveltecult"
+  },
+  "keywords": [
+    "franken-ui"
+  ],
   "engines": {
     "vscode": "^1.98.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#ffffff",
+    "theme": "light"
+  },
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:blade",
+    "onLanguage:latte",
+    "onLanguage:php",
+    "onLanguage:twig",
+    "onLanguage:smarty",
+    "onLanguage:razor",
+    "onLanguage:django-html",
+    "onLanguage:jinja",
+    "onLanguage:erb",
+    "onLanguage:haml",
+    "onLanguage:liquid",
+    "onLanguage:handlebars",
+    "onLanguage:mustache",
+    "onLanguage:ejs",
+    "onLanguage:nunjucks",
+    "onLanguage:pug",
+    "onLanguage:jsp",
+    "onLanguage:aspnetcorerazor",
+    "onLanguage:vue",
+    "onLanguage:svelte",
+    "onLanguage:astro",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "franken-ui.helloWorld",
-        "title": "Hello World"
+        "command": "franken-ui.showStatus",
+        "title": "Franken UI: Check Extension Status"
+      },
+      {
+        "command": "franken-ui.selectVersion",
+        "title": "Franken UI: Select Version"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Franken UI",
+      "properties": {
+        "frankenUI.version": {
+          "type": "string",
+          "default": "auto",
+          "enum": [
+            "auto",
+            "2.1"
+          ],
+          "description": "Version of Franken UI to use for IntelliSense"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",

@@ -1,0 +1,2889 @@
+[
+  {
+    "name": "uk-accordion",
+    "description": "Container for the accordion component",
+    "properties": []
+  },
+  {
+    "name": "uk-accordion-title",
+    "description": "Defines and styles the toggle for each accordion item",
+    "properties": [
+      "display: flex",
+      "justify-content: space-between",
+      "align-items: start",
+      "overflow: hidden",
+      "padding: 1rem 0 1rem 0",
+      "font-weight: 500"
+    ]
+  },
+  {
+    "name": "uk-accordion-icon",
+    "description": "Defines and styles the icon part for each accordion item",
+    "properties": [
+      "flex: none",
+      "transition: 300ms transform",
+      "color: hsl(var(--muted-foreground))"
+    ]
+  },
+  {
+    "name": "uk-accordion-content",
+    "description": "Defines the content part for each accordion item",
+    "properties": ["display: flow-root", "padding: 0 0 1rem 0"]
+  },
+  {
+    "name": "uk-alert",
+    "description": "Container for the alert component",
+    "properties": [
+      "position: relative",
+      "padding: 1rem 2rem 1rem 1rem",
+      "background-color: hsl(var(--muted) / .5)",
+      "color: hsl(var(--foreground))",
+      "border-radius: var(--uk-global-radius)",
+      "border-width: 1px",
+      "border-style: solid",
+      "border-color: hsl(var(--border))"
+    ]
+  },
+  {
+    "name": "uk-alert-close",
+    "description": "Close button for the alert component",
+    "properties": ["position: absolute", "inset: 1rem 1rem auto auto"]
+  },
+  {
+    "name": "uk-alert-destructive",
+    "description": "Styles an alert with destructive/error colors",
+    "properties": [
+      "--uk-alert-bg: hsl(var(--destructive))",
+      "--uk-alert-color: hsl(var(--destructive-foreground))",
+      "--uk-alert-border-color: hsl(var(--destructive))"
+    ]
+  },
+  {
+    "name": "uk-alert-title",
+    "description": "Styles the title within an alert component",
+    "properties": [
+      "font-weight: 500",
+      "line-height: none",
+      "letter-spacing: -0.025em"
+    ]
+  },
+  {
+    "name": "uk-anmt-fade",
+    "description": "Animation that fades an element in",
+    "properties": [
+      "animation-name: uk-fade",
+      "animation-duration: 0.8s",
+      "animation-timing-function: linear"
+    ]
+  },
+  {
+    "name": "uk-anmt-scale-up",
+    "description": "Animation that fades in and scales up an element",
+    "properties": [
+      "animation-name: uk-fade, uk-scale-up",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-scale-down",
+    "description": "Animation that fades in and scales down an element",
+    "properties": [
+      "animation-name: uk-fade, uk-scale-down",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-slide-top",
+    "description": "Animation that fades and slides in from the top",
+    "properties": [
+      "animation-name: uk-fade, uk-slide-top",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-slide-bottom",
+    "description": "Animation that fades and slides in from the bottom",
+    "properties": [
+      "animation-name: uk-fade, uk-slide-bottom",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-slide-left",
+    "description": "Animation that fades and slides in from the left",
+    "properties": [
+      "animation-name: uk-fade, uk-slide-left",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-slide-right",
+    "description": "Animation that fades and slides in from the right",
+    "properties": [
+      "animation-name: uk-fade, uk-slide-right",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-slide-top-sm",
+    "description": "Animation that fades and slides in from the top by a small distance",
+    "properties": [
+      "animation-name: uk-fade, uk-slide-top-sm",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-slide-bottom-sm",
+    "description": "Animation that fades and slides in from the bottom by a small distance",
+    "properties": [
+      "animation-name: uk-fade, uk-slide-bottom-sm",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-slide-left-sm",
+    "description": "Animation that fades and slides in from the left by a small distance",
+    "properties": [
+      "animation-name: uk-fade, uk-slide-left-sm",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-slide-right-sm",
+    "description": "Animation that fades and slides in from the right by a small distance",
+    "properties": [
+      "animation-name: uk-fade, uk-slide-right-sm",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-slide-top-md",
+    "description": "Animation that fades and slides in from the top by a medium distance",
+    "properties": [
+      "animation-name: uk-fade, uk-slide-top-md",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-slide-bottom-md",
+    "description": "Animation that fades and slides in from the bottom by a medium distance",
+    "properties": [
+      "animation-name: uk-fade, uk-slide-bottom-md",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-slide-left-md",
+    "description": "Animation that fades and slides in from the left by a medium distance",
+    "properties": [
+      "animation-name: uk-fade, uk-slide-left-md",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-slide-right-md",
+    "description": "Animation that fades and slides in from the right by a medium distance",
+    "properties": [
+      "animation-name: uk-fade, uk-slide-right-md",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-kenburns",
+    "description": "Animation that slowly scales up an element without fading",
+    "properties": [
+      "animation-name: uk-kenburns",
+      "animation-duration: 15s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-shake",
+    "description": "Animation that makes an element shake",
+    "properties": [
+      "animation-name: uk-shake",
+      "animation-duration: 0.5s",
+      "animation-timing-function: ease-out"
+    ]
+  },
+  {
+    "name": "uk-anmt-stroke",
+    "description": "Animation that draws SVG strokes",
+    "properties": [
+      "animation-name: uk-stroke",
+      "animation-duration: 2s",
+      "stroke-dasharray: var(--uk-anmt-stroke)"
+    ]
+  },
+  {
+    "name": "uk-anmt-reverse",
+    "description": "Modifier to reverse any animation",
+    "properties": [
+      "animation-direction: reverse",
+      "animation-timing-function: ease-in"
+    ]
+  },
+  {
+    "name": "uk-anmt-fast",
+    "description": "Modifier for a faster animation speed",
+    "properties": ["animation-duration: 0.1s"]
+  },
+  {
+    "name": "uk-anmt-toggle",
+    "description": "Applied to a parent element to toggle animations on hover or focus",
+    "properties": []
+  },
+  {
+    "name": "uk-badge",
+    "description": "Creates a badge component",
+    "properties": [
+      "display: inline-flex",
+      "justify-content: center",
+      "align-items: center",
+      "height: 1.25rem",
+      "min-width: 1.25rem",
+      "padding: 0 0.375rem",
+      "font-size: var(--uk-global-font-size-s)",
+      "line-height: var(--uk-global-leading-s)",
+      "font-weight: 600",
+      "border-radius: 500px",
+      "box-shadow: var(--uk-global-shadow)",
+      "border: 1px solid hsl(var(--border))",
+      "background-color: transparent",
+      "color: hsl(var(--foreground))"
+    ]
+  },
+  {
+    "name": "uk-badge-primary",
+    "description": "Applies primary color styling to a badge",
+    "properties": [
+      "--uk-badge-border: 1px solid hsl(var(--primary))",
+      "--uk-badge-bg: hsl(var(--primary))",
+      "--uk-badge-color: hsl(var(--primary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-badge-secondary",
+    "description": "Applies secondary color styling to a badge",
+    "properties": [
+      "--uk-badge-border: 1px solid hsl(var(--secondary))",
+      "--uk-badge-bg: hsl(var(--secondary))",
+      "--uk-badge-color: hsl(var(--secondary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-badge-destructive",
+    "description": "Applies destructive color styling to a badge",
+    "properties": [
+      "--uk-badge-border: 1px solid hsl(var(--destructive))",
+      "--uk-badge-bg: hsl(var(--destructive))",
+      "--uk-badge-color: hsl(var(--destructive-foreground))"
+    ]
+  },
+  {
+    "name": "uk-avatar",
+    "description": "Creates an avatar component",
+    "properties": [
+      "background-color: hsl(var(--background))",
+      "border-radius: var(--uk-global-radius)",
+      "position: relative",
+      "display: inline-flex",
+      "height: 2.5rem",
+      "width: 2.5rem",
+      "align-items: center",
+      "justify-content: center"
+    ]
+  },
+  {
+    "name": "uk-avatar-image",
+    "description": "Container for the image within an avatar",
+    "properties": ["height: 100%", "width: 100%", "overflow: hidden"]
+  },
+  {
+    "name": "uk-avatar-rounded",
+    "description": "Makes the avatar fully rounded (circular)",
+    "properties": ["border-radius: 9999px"]
+  },
+  {
+    "name": "uk-avatar-bordered",
+    "description": "Adds a border to the avatar",
+    "properties": [
+      "border-width: 0.125rem",
+      "border-color: hsl(var(--border))",
+      "padding: 0.25rem"
+    ]
+  },
+  {
+    "name": "uk-avatar-dot",
+    "description": "Adds a status indicator dot to the bottom-right of the avatar",
+    "properties": [
+      "--uk-avatar-dot-bg: hsl(var(--primary))",
+      "--uk-avatar-dot-size: 0.875rem"
+    ]
+  },
+  {
+    "name": "uk-avatar-dot-top",
+    "description": "Places the status indicator dot at the top center",
+    "properties": [
+      "--uk-avatar-dot-bg: hsl(var(--primary))",
+      "--uk-avatar-dot-size: 0.875rem"
+    ]
+  },
+  {
+    "name": "uk-avatar-dot-top-right",
+    "description": "Places the status indicator dot at the top-right corner",
+    "properties": [
+      "--uk-avatar-dot-bg: hsl(var(--primary))",
+      "--uk-avatar-dot-size: 0.875rem"
+    ]
+  },
+  {
+    "name": "uk-avatar-dot-right",
+    "description": "Places the status indicator dot at the right center",
+    "properties": [
+      "--uk-avatar-dot-bg: hsl(var(--primary))",
+      "--uk-avatar-dot-size: 0.875rem"
+    ]
+  },
+  {
+    "name": "uk-avatar-dot-bottom-right",
+    "description": "Places the status indicator dot at the bottom-right corner",
+    "properties": [
+      "--uk-avatar-dot-bg: hsl(var(--primary))",
+      "--uk-avatar-dot-size: 0.875rem"
+    ]
+  },
+  {
+    "name": "uk-avatar-dot-bottom",
+    "description": "Places the status indicator dot at the bottom center",
+    "properties": [
+      "--uk-avatar-dot-bg: hsl(var(--primary))",
+      "--uk-avatar-dot-size: 0.875rem"
+    ]
+  },
+  {
+    "name": "uk-avatar-dot-bottom-left",
+    "description": "Places the status indicator dot at the bottom-left corner",
+    "properties": [
+      "--uk-avatar-dot-bg: hsl(var(--primary))",
+      "--uk-avatar-dot-size: 0.875rem"
+    ]
+  },
+  {
+    "name": "uk-avatar-dot-left",
+    "description": "Places the status indicator dot at the left center",
+    "properties": [
+      "--uk-avatar-dot-bg: hsl(var(--primary))",
+      "--uk-avatar-dot-size: 0.875rem"
+    ]
+  },
+  {
+    "name": "uk-avatar-dot-top-left",
+    "description": "Places the status indicator dot at the top-left corner",
+    "properties": [
+      "--uk-avatar-dot-bg: hsl(var(--primary))",
+      "--uk-avatar-dot-size: 0.875rem"
+    ]
+  },
+  {
+    "name": "uk-avatar-text",
+    "description": "Container for text content within an avatar",
+    "properties": [
+      "height: 100%",
+      "width: 100%",
+      "display: flex",
+      "justify-content: center",
+      "align-items: center",
+      "border-radius: var(--uk-global-radius-s)"
+    ]
+  },
+  {
+    "name": "uk-breadcrumb",
+    "description": "Creates a breadcrumb navigation component",
+    "properties": ["display: contents"]
+  },
+  {
+    "name": "uk-btn",
+    "description": "Base button component class",
+    "properties": [
+      "display: inline-flex",
+      "align-items: center",
+      "justify-content: center",
+      "gap: 0.5rem",
+      "width: auto",
+      "font-weight: 500",
+      "text-align: center",
+      "white-space: nowrap",
+      "border-width: 1px",
+      "border-style: solid",
+      "border-color: transparent"
+    ]
+  },
+  {
+    "name": "uk-btn-default",
+    "description": "Default button style with border",
+    "properties": [
+      "--uk-btn-border-color: hsl(var(--border))",
+      "--uk-btn-bg: hsl(var(--background))",
+      "--uk-btn-color: hsl(var(--foreground))"
+    ]
+  },
+  {
+    "name": "uk-btn-primary",
+    "description": "Primary button style for main actions",
+    "properties": [
+      "--uk-btn-bg: hsl(var(--primary))",
+      "--uk-btn-color: hsl(var(--primary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-btn-secondary",
+    "description": "Secondary button style for important actions",
+    "properties": [
+      "--uk-btn-bg: hsl(var(--secondary))",
+      "--uk-btn-color: hsl(var(--secondary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-btn-destructive",
+    "description": "Destructive button style for negative actions",
+    "properties": [
+      "--uk-btn-bg: hsl(var(--destructive))",
+      "--uk-btn-color: hsl(var(--destructive-foreground))"
+    ]
+  },
+  {
+    "name": "uk-btn-ghost",
+    "description": "Ghost button style with no background",
+    "properties": ["box-shadow: none"]
+  },
+  {
+    "name": "uk-btn-text",
+    "description": "Text button style with underline animation",
+    "properties": [
+      "height: auto",
+      "padding: 0",
+      "position: relative",
+      "border-radius: 0",
+      "box-shadow: none"
+    ]
+  },
+  {
+    "name": "uk-btn-icon",
+    "description": "Icon button style for buttons with only an icon",
+    "properties": ["aspect-ratio: 1", "padding: 0"]
+  },
+  {
+    "name": "uk-btn-xs",
+    "description": "Extra small button size",
+    "properties": [
+      "--uk-btn-height: 1.75rem",
+      "--uk-btn-padding: 0.375rem 0.75rem",
+      "--uk-btn-font-size: var(--uk-global-font-size-s)",
+      "--uk-btn-leading: var(--uk-global-leading-s)"
+    ]
+  },
+  {
+    "name": "uk-btn-sm",
+    "description": "Small button size",
+    "properties": [
+      "--uk-btn-height: 2rem",
+      "--uk-btn-padding: 0.5rem 1rem",
+      "--uk-btn-font-size: var(--uk-global-font-size-s)",
+      "--uk-btn-leading: var(--uk-global-leading-s)"
+    ]
+  },
+  {
+    "name": "uk-btn-md",
+    "description": "Medium button size",
+    "properties": ["--uk-btn-height: 3rem", "--uk-btn-padding: 0.75rem 1.5rem"]
+  },
+  {
+    "name": "uk-btn-lg",
+    "description": "Large button size",
+    "properties": [
+      "--uk-btn-height: 3.5rem",
+      "--uk-btn-padding: 0.875rem 1.75rem"
+    ]
+  },
+  {
+    "name": "uk-btn-group",
+    "description": "Container to group multiple buttons together",
+    "properties": [
+      "display: inline-flex",
+      "position: relative",
+      "box-shadow: var(--uk-btn-shadow)",
+      "border-radius: var(--uk-btn-radius)"
+    ]
+  },
+  {
+    "name": "uk-card",
+    "description": "Creates a card container component",
+    "properties": [
+      "position: relative",
+      "box-sizing: border-box",
+      "border: 1px solid hsl(var(--border))",
+      "border-radius: var(--uk-global-radius)",
+      "box-shadow: var(--uk-global-shadow)",
+      "background-color: hsl(var(--card))",
+      "color: hsl(var(--card-foreground))"
+    ]
+  },
+  {
+    "name": "uk-card-body",
+    "description": "Main content area of a card",
+    "properties": ["padding: 1rem"]
+  },
+  {
+    "name": "uk-card-header",
+    "description": "Header section of a card",
+    "properties": ["padding: 1rem"]
+  },
+  {
+    "name": "uk-card-footer",
+    "description": "Footer section of a card",
+    "properties": ["padding: 1rem"]
+  },
+  {
+    "name": "uk-card-title",
+    "description": "Title element for a card",
+    "properties": [
+      "font-size: 1.125rem",
+      "font-weight: 600",
+      "line-height: 1",
+      "letter-spacing: -0.025em"
+    ]
+  },
+  {
+    "name": "uk-card-primary",
+    "description": "Primary styled card variation",
+    "properties": [
+      "--uk-card-border: 1px solid transparent",
+      "--uk-card-bg: hsl(var(--primary))",
+      "--uk-card-color: hsl(var(--primary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-card-secondary",
+    "description": "Secondary styled card variation",
+    "properties": [
+      "--uk-card-border: 1px solid transparent",
+      "--uk-card-bg: hsl(var(--secondary))",
+      "--uk-card-color: hsl(var(--secondary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-card-destructive",
+    "description": "Destructive styled card variation",
+    "properties": [
+      "--uk-card-border: 1px solid transparent",
+      "--uk-card-bg: hsl(var(--destructive))",
+      "--uk-card-color: hsl(var(--destructive-foreground))"
+    ]
+  },
+  {
+    "name": "uk-chart",
+    "description": "Main container for chart components",
+    "properties": []
+  },
+  {
+    "name": "uk-chart-container",
+    "description": "Container for a chart with styling",
+    "properties": [
+      "border-radius: var(--uk-global-radius)",
+      "box-shadow: var(--uk-global-shadow)",
+      "border: 1px solid hsl(var(--border))",
+      "background-color: hsl(var(--background))",
+      "color: hsl(var(--foreground))"
+    ]
+  },
+  {
+    "name": "uk-chart-sapphire",
+    "description": "Applies sapphire color palette to a chart",
+    "properties": [
+      "--chart-1: 221.2 83.2% 53.3%",
+      "--chart-2: 212 95% 68%",
+      "--chart-3: 216 92% 60%",
+      "--chart-4: 210 98% 78%",
+      "--chart-5: 212 97% 87%"
+    ]
+  },
+  {
+    "name": "uk-chart-ruby",
+    "description": "Applies ruby color palette to a chart",
+    "properties": [
+      "--chart-1: 347 77% 50%",
+      "--chart-2: 352 83% 91%",
+      "--chart-3: 350 80% 72%",
+      "--chart-4: 351 83% 82%",
+      "--chart-5: 349 77% 62%"
+    ]
+  },
+  {
+    "name": "uk-chart-emerald",
+    "description": "Applies emerald color palette to a chart",
+    "properties": [
+      "--chart-1: 139 65% 20%",
+      "--chart-2: 140 74% 44%",
+      "--chart-3: 142 88% 28%",
+      "--chart-4: 137 55% 15%",
+      "--chart-5: 141 40% 9%"
+    ]
+  },
+  {
+    "name": "uk-chart-daylight",
+    "description": "Applies daylight color theme to a chart",
+    "properties": [
+      "--chart-1: 25 34% 28%",
+      "--chart-2: 26 36% 34%",
+      "--chart-3: 28 40% 40%",
+      "--chart-4: 31 41% 48%",
+      "--chart-5: 35 43% 53%"
+    ]
+  },
+  {
+    "name": "uk-chart-midnight",
+    "description": "Applies midnight color theme to a chart",
+    "properties": [
+      "--chart-1: 359 2% 90%",
+      "--chart-2: 240 1% 74%",
+      "--chart-3: 240 1% 58%",
+      "--chart-4: 240 1% 42%",
+      "--chart-5: 240 2% 26%"
+    ]
+  },
+  {
+    "name": "uk-cmd-header",
+    "description": "Header section of a command component",
+    "properties": [
+      "display: flex",
+      "align-items: center",
+      "gap: 0.5rem",
+      "padding: 0 0.75rem"
+    ]
+  },
+  {
+    "name": "uk-cmd-header-input",
+    "description": "Input container within the command header",
+    "properties": ["flex: 1", "padding: 0.75rem 0"]
+  },
+  {
+    "name": "uk-cmd-header-icon",
+    "description": "Icon within the command header",
+    "properties": [
+      "width: 1rem",
+      "height: 1rem",
+      "flex: none",
+      "color: hsl(var(--muted-foreground))"
+    ]
+  },
+  {
+    "name": "uk-cmd-header-esc",
+    "description": "Escape button in the command header",
+    "properties": ["flex: none"]
+  },
+  {
+    "name": "uk-cmd-body",
+    "description": "Body section of a command component",
+    "properties": ["max-height: 20rem"]
+  },
+  {
+    "name": "uk-cmd-item-wrapper",
+    "description": "Container for a command item",
+    "properties": ["display: flex", "flex: 1", "align-items: center"]
+  },
+  {
+    "name": "uk-cmd-item-icon",
+    "description": "Icon within a command item",
+    "properties": [
+      "margin-right: 0.5rem",
+      "width: 1rem",
+      "height: 1rem",
+      "flex: none"
+    ]
+  },
+  {
+    "name": "uk-cmd-item-text",
+    "description": "Text within a command item",
+    "properties": ["flex: 1"]
+  },
+  {
+    "name": "uk-comment",
+    "description": "Container for a comment",
+    "properties": ["padding: 0.75rem"]
+  },
+  {
+    "name": "uk-comment-body",
+    "description": "Main content area of a comment",
+    "properties": [
+      "display: flow-root",
+      "overflow-wrap: break-word",
+      "word-wrap: break-word"
+    ]
+  },
+  {
+    "name": "uk-comment-header",
+    "description": "Header section of a comment",
+    "properties": ["display: flow-root", "margin-bottom: 1.25rem"]
+  },
+  {
+    "name": "uk-comment-title",
+    "description": "Title for a comment",
+    "properties": ["font-size: 1rem", "font-weight: 500"]
+  },
+  {
+    "name": "uk-comment-meta",
+    "description": "Metadata for a comment",
+    "properties": [
+      "font-size: var(--uk-global-font-size-s)",
+      "line-height: var(--uk-global-leading-s)",
+      "margin-top: 0.25rem"
+    ]
+  },
+  {
+    "name": "uk-comment-list",
+    "description": "Container for a list of comments",
+    "properties": []
+  },
+  {
+    "name": "uk-comment-primary",
+    "description": "Primary styled comment variation",
+    "properties": [
+      "border-radius: var(--uk-global-radius)",
+      "background-color: hsl(var(--primary))",
+      "color: hsl(var(--primary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-comment-avatar",
+    "description": "Avatar container within a comment",
+    "properties": [
+      "height: 2.5rem",
+      "width: 2.5rem",
+      "overflow: hidden",
+      "border-radius: 9999px",
+      "background-color: hsl(var(--muted))"
+    ]
+  },
+
+  {
+    "name": "uk-container",
+    "description": "Provides a responsive container for page content",
+    "properties": [
+      "display: flow-root",
+      "box-sizing: content-box",
+      "max-width: 1200px",
+      "margin-left: auto",
+      "margin-right: auto",
+      "padding-left: 1rem",
+      "padding-right: 1rem"
+    ]
+  },
+  {
+    "name": "uk-container-xs",
+    "description": "Extra small container with reduced maximum width",
+    "properties": ["max-width: 750px"]
+  },
+  {
+    "name": "uk-container-sm",
+    "description": "Small container with reduced maximum width",
+    "properties": ["max-width: 900px"]
+  },
+  {
+    "name": "uk-container-lg",
+    "description": "Large container with increased maximum width",
+    "properties": ["max-width: 1400px"]
+  },
+  {
+    "name": "uk-container-xl",
+    "description": "Extra large container with increased maximum width",
+    "properties": ["max-width: 1600px"]
+  },
+  {
+    "name": "uk-container-expand",
+    "description": "Container with no maximum width",
+    "properties": ["max-width: none"]
+  },
+  {
+    "name": "uk-container-expand-left",
+    "description": "Container with no left margin",
+    "properties": ["margin-left: 0"]
+  },
+  {
+    "name": "uk-container-expand-right",
+    "description": "Container with no right margin",
+    "properties": ["margin-right: 0"]
+  },
+  {
+    "name": "uk-container-item-padding-remove-left",
+    "description": "Removes left padding and adjusts width to compensate",
+    "properties": ["width: calc(100% + 1rem)", "margin-left: -1rem"]
+  },
+  {
+    "name": "uk-container-item-padding-remove-right",
+    "description": "Removes right padding and adjusts width to compensate",
+    "properties": ["width: calc(100% + 1rem)", "margin-right: -1rem"]
+  },
+  {
+    "name": "uk-cover",
+    "description": "Attribute to make media cover its container",
+    "properties": []
+  },
+  {
+    "name": "uk-cover-container",
+    "description": "Container for cover elements",
+    "properties": ["overflow: hidden", "position: relative"]
+  },
+  {
+    "name": "uk-datepicker-dropdown",
+    "description": "Dropdown container for date picker",
+    "properties": ["padding: 1rem"]
+  },
+  {
+    "name": "uk-datepicker-time",
+    "description": "Time section of a date picker",
+    "properties": [
+      "margin-top: 1rem",
+      "display: flex",
+      "justify-content: center"
+    ]
+  },
+  {
+    "name": "uk-cal",
+    "description": "Calendar component container",
+    "properties": ["max-width: calc(2.5rem * 7)"]
+  },
+  {
+    "name": "uk-cal-header",
+    "description": "Header section of the calendar",
+    "properties": [
+      "margin-bottom: 0.5rem",
+      "display: flex",
+      "column-gap: 0.5rem"
+    ]
+  },
+  {
+    "name": "uk-cal-header-l",
+    "description": "Left section of calendar header",
+    "properties": ["flex: none"]
+  },
+  {
+    "name": "uk-cal-header-r",
+    "description": "Right section of calendar header",
+    "properties": ["flex: none"]
+  },
+  {
+    "name": "uk-cal-jumper",
+    "description": "Calendar date/month navigation control",
+    "properties": [
+      "display: flex",
+      "flex: 1 1 0%",
+      "align-items: center",
+      "justify-content: space-between",
+      "column-gap: 0.5rem"
+    ]
+  },
+  {
+    "name": "uk-cal-title",
+    "description": "Title display in calendar header",
+    "properties": ["width: 100%", "text-align: center", "font-weight: 500"]
+  },
+  {
+    "name": "uk-cal-month-dropdown",
+    "description": "Month selection dropdown in calendar",
+    "properties": ["--uk-dropdown-nav-item-padding: 0.25rem", "flex: 1 1 0%"]
+  },
+  {
+    "name": "uk-cal-divider",
+    "description": "Calendar with divider lines between rows",
+    "properties": []
+  },
+  {
+    "name": "uk-cal-marked",
+    "description": "Adds a marker to indicate special dates",
+    "properties": []
+  },
+  {
+    "name": "uk-cal-oom",
+    "description": "Styles for dates outside of the current month",
+    "properties": []
+  },
+  {
+    "name": "uk-input-time",
+    "description": "Input field for time selection",
+    "properties": [
+      "display: inline-flex",
+      "align-items: center",
+      "column-gap: 0.25rem"
+    ]
+  },
+  {
+    "name": "uk-hr",
+    "description": "Horizontal rule divider",
+    "properties": [
+      "height: 1px",
+      "border: none",
+      "border-color: hsl(var(--border))"
+    ]
+  },
+  {
+    "name": "uk-divider-icon",
+    "description": "Divider with a centered icon",
+    "properties": [
+      "position: relative",
+      "height: 1.25rem",
+      "background-repeat: no-repeat",
+      "background-position: 50% 50%"
+    ]
+  },
+  {
+    "name": "uk-divider-sm",
+    "description": "Small divider with limited width",
+    "properties": ["line-height: 0"]
+  },
+  {
+    "name": "uk-divider-vertical",
+    "description": "Vertical divider line",
+    "properties": [
+      "width: max-content",
+      "height: 100px",
+      "margin-left: auto",
+      "margin-right: auto",
+      "border-left: 1px solid hsl(var(--border))",
+      "border-bottom: 1px solid hsl(var(--border))"
+    ]
+  },
+
+  {
+    "name": "uk-dotnav",
+    "description": "Creates a navigation with dots, commonly used for slideshows",
+    "properties": ["display: flex", "flex-wrap: wrap", "margin-left: -0.75rem"]
+  },
+  {
+    "name": "uk-dotnav-vertical",
+    "description": "Creates a vertical dot navigation",
+    "properties": [
+      "flex-direction: column",
+      "margin-left: 0",
+      "margin-top: -0.75rem"
+    ]
+  },
+  {
+    "name": "uk-drop",
+    "description": "Base component for dropdown-like components",
+    "properties": [
+      "display: none",
+      "position: absolute",
+      "z-index: 1020",
+      "box-sizing: border-box",
+      "width: 18rem"
+    ]
+  },
+  {
+    "name": "uk-dropbar",
+    "description": "Full-width dropdown bar",
+    "properties": ["width: auto", "background-color: hsl(var(--background))"]
+  },
+  {
+    "name": "uk-dropbar-lg",
+    "description": "Large variant of dropbar with increased padding",
+    "properties": ["padding: 2.5rem 0"]
+  },
+  {
+    "name": "uk-dropdown",
+    "description": "Dropdown menu component",
+    "properties": [
+      "width: auto",
+      "border-radius: var(--uk-global-radius)",
+      "box-shadow: var(--uk-global-shadow)",
+      "border-width: 1px",
+      "border-style: solid",
+      "border-color: hsl(var(--border))",
+      "background-color: hsl(var(--popover))",
+      "color: hsl(var(--popover-foreground))"
+    ]
+  },
+  {
+    "name": "uk-dropdown-dropbar",
+    "description": "Dropdown variant for use within a dropbar",
+    "properties": [
+      "width: auto",
+      "background-color: transparent",
+      "box-shadow: none"
+    ]
+  },
+  {
+    "name": "uk-dropdown-nav",
+    "description": "Navigation list within a dropdown",
+    "properties": ["user-select: none"]
+  },
+  {
+    "name": "uk-dropnav-dropbar",
+    "description": "Navigation within a dropbar",
+    "properties": ["position: absolute", "padding: 0", "left: 0", "right: 0"]
+  },
+  {
+    "name": "uk-icon",
+    "description": "Container for SVG icons with styling",
+    "properties": [
+      "display: inline-flex",
+      "color: inherit",
+      "fill: currentcolor"
+    ]
+  },
+  {
+    "name": "uk-icon-image",
+    "description": "Creates an icon from an image",
+    "properties": [
+      "width: 1.25rem",
+      "height: 1.25rem",
+      "background-position: 50% 50%",
+      "background-repeat: no-repeat",
+      "background-size: contain",
+      "vertical-align: middle",
+      "object-fit: scale-down",
+      "max-width: none"
+    ]
+  },
+  {
+    "name": "uk-label",
+    "description": "Creates a label component for highlighting information",
+    "properties": [
+      "display: inline-flex",
+      "align-items: center",
+      "padding: 0.125rem 0.625rem",
+      "font-size: var(--uk-global-font-size-s)",
+      "line-height: var(--uk-global-leading-s)",
+      "font-weight: 600",
+      "border-radius: var(--uk-global-radius)",
+      "box-shadow: var(--uk-global-shadow)",
+      "border: 1px solid hsl(var(--border))",
+      "background-color: transparent",
+      "color: hsl(var(--foreground))"
+    ]
+  },
+  {
+    "name": "uk-label-primary",
+    "description": "Primary colored label",
+    "properties": [
+      "--uk-label-border: 1px solid hsl(var(--primary))",
+      "--uk-label-bg: hsl(var(--primary))",
+      "--uk-label-color: hsl(var(--primary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-label-secondary",
+    "description": "Secondary colored label",
+    "properties": [
+      "--uk-label-border: 1px solid hsl(var(--secondary))",
+      "--uk-label-bg: hsl(var(--secondary))",
+      "--uk-label-color: hsl(var(--secondary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-label-destructive",
+    "description": "Destructive colored label",
+    "properties": [
+      "--uk-label-border: 1px solid hsl(var(--destructive))",
+      "--uk-label-bg: hsl(var(--destructive))",
+      "--uk-label-color: hsl(var(--destructive-foreground))"
+    ]
+  },
+  {
+    "name": "uk-leader",
+    "description": "Creates leader content like dot lines between text and values",
+    "properties": ["overflow: hidden"]
+  },
+  {
+    "name": "uk-leader-fill",
+    "description": "Fills space with leader characters (typically dots)",
+    "properties": ["margin-left: 1rem", "white-space: nowrap"]
+  },
+
+  {
+    "name": "uk-lightbox",
+    "description": "Creates a responsive image/video gallery overlay",
+    "properties": [
+      "display: none",
+      "position: fixed",
+      "top: 0",
+      "right: 0",
+      "bottom: 0",
+      "left: 0",
+      "z-index: 1010",
+      "background: hsl(var(--background))"
+    ]
+  },
+  {
+    "name": "uk-lightbox-caption",
+    "description": "Caption area for lightbox content",
+    "properties": [
+      "background-color: hsl(var(--secondary))",
+      "padding: 1rem",
+      "color: hsl(var(--secondary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-lightbox-iframe",
+    "description": "Container for iframe content in a lightbox",
+    "properties": ["width: 80%", "height: 80%"]
+  },
+  {
+    "name": "uk-link",
+    "description": "Base link style with underlining",
+    "properties": [
+      "font-weight: 500",
+      "text-decoration-line: underline",
+      "text-underline-offset: 4px"
+    ]
+  },
+  {
+    "name": "uk-link-muted",
+    "description": "Muted style link with subdued color",
+    "properties": [
+      "font-weight: 500",
+      "color: hsl(var(--muted-foreground))",
+      "text-decoration-line: underline",
+      "text-underline-offset: 4px"
+    ]
+  },
+  {
+    "name": "uk-link-reset",
+    "description": "Completely resets link styling",
+    "properties": [
+      "text-decoration: none !important",
+      "font-weight: 400 !important"
+    ]
+  },
+  {
+    "name": "uk-link-toggle",
+    "description": "Container for toggling link styles on hover",
+    "properties": ["text-decoration: none !important"]
+  },
+  {
+    "name": "uk-list",
+    "description": "Base list component",
+    "properties": []
+  },
+  {
+    "name": "uk-list-disc",
+    "description": "List with disc bullets",
+    "properties": ["padding-left: 32px", "list-style-type: disc"]
+  },
+  {
+    "name": "uk-list-circle",
+    "description": "List with circle bullets",
+    "properties": ["padding-left: 32px", "list-style-type: circle"]
+  },
+  {
+    "name": "uk-list-square",
+    "description": "List with square bullets",
+    "properties": ["padding-left: 32px", "list-style-type: square"]
+  },
+  {
+    "name": "uk-list-decimal",
+    "description": "List with decimal numbering",
+    "properties": ["padding-left: 32px", "list-style-type: decimal"]
+  },
+  {
+    "name": "uk-list-hyphen",
+    "description": "List with hyphen markers",
+    "properties": ["padding-left: 32px", "list-style-type: '–  '"]
+  },
+  {
+    "name": "uk-list-muted",
+    "description": "List with muted marker color",
+    "properties": ["color: hsl(var(--muted-foreground))"]
+  },
+  {
+    "name": "uk-list-primary",
+    "description": "List with primary colored markers",
+    "properties": ["color: hsl(var(--primary))"]
+  },
+  {
+    "name": "uk-list-secondary",
+    "description": "List with secondary colored markers",
+    "properties": ["color: hsl(var(--secondary-foreground))"]
+  },
+  {
+    "name": "uk-list-bullet",
+    "description": "List with custom image bullets",
+    "properties": ["position: relative", "padding-left: 32px"]
+  },
+  {
+    "name": "uk-list-divider",
+    "description": "List with dividers between items",
+    "properties": ["border-top-width: 1px", "border-color: hsl(var(--border))"]
+  },
+  {
+    "name": "uk-list-striped",
+    "description": "List with alternating background colors",
+    "properties": ["background-color: hsl(var(--muted) / 0.5)"]
+  },
+  {
+    "name": "uk-modal",
+    "description": "Modal dialog overlay container",
+    "properties": [
+      "display: none",
+      "position: fixed",
+      "top: 0",
+      "right: 0",
+      "bottom: 0",
+      "left: 0",
+      "z-index: 1010",
+      "overflow-y: auto",
+      "background-color: rgba(0, 0, 0, 0.8)"
+    ]
+  },
+  {
+    "name": "uk-modal-dialog",
+    "description": "Dialog box within a modal",
+    "properties": [
+      "position: relative",
+      "box-sizing: border-box",
+      "margin: 0 auto",
+      "width: 32rem",
+      "max-width: 100%",
+      "border-width: 1px",
+      "border-style: solid",
+      "border-color: hsl(var(--border))",
+      "background-color: hsl(var(--background))"
+    ]
+  },
+  {
+    "name": "uk-modal-container",
+    "description": "Container modifier for wider modals",
+    "properties": ["width: 1200px"]
+  },
+  {
+    "name": "uk-modal-full",
+    "description": "Full-screen modal variant",
+    "properties": ["padding: 0 !important", "background: none"]
+  },
+  {
+    "name": "uk-modal-body",
+    "description": "Content area within a modal",
+    "properties": ["display: flow-root"]
+  },
+  {
+    "name": "uk-modal-header",
+    "description": "Header section of a modal",
+    "properties": ["display: flow-root"]
+  },
+  {
+    "name": "uk-modal-footer",
+    "description": "Footer section of a modal",
+    "properties": ["display: flow-root"]
+  },
+  {
+    "name": "uk-modal-title",
+    "description": "Title element for a modal",
+    "properties": [
+      "font-size: 1.125rem",
+      "font-weight: 600",
+      "line-height: 1",
+      "letter-spacing: -0.025em"
+    ]
+  },
+
+  {
+    "name": "uk-nav-primary",
+    "description": "Primary navigation component with background highlighting for active items",
+    "properties": [
+      "--uk-nav-item-padding: 0.5rem 1rem",
+      "--uk-nav-item-margin: 0.25rem",
+      "--uk-nav-item-active-font-weight: 400"
+    ]
+  },
+  {
+    "name": "uk-nav-secondary",
+    "description": "Secondary navigation component with background highlighting for active items",
+    "properties": [
+      "--uk-nav-item-padding: 0.5rem 1rem",
+      "--uk-nav-item-margin: 0.25rem",
+      "--uk-nav-item-active-font-weight: 400"
+    ]
+  },
+  {
+    "name": "uk-nav-default",
+    "description": "Default navigation component with simple styling",
+    "properties": ["--uk-nav-item-color: hsl(var(--muted-foreground))"]
+  },
+  {
+    "name": "uk-nav-header",
+    "description": "Header element within a navigation component",
+    "properties": [
+      "font-size: var(--uk-global-font-size)",
+      "line-height: var(--uk-global-leading)",
+      "font-weight: 600"
+    ]
+  },
+  {
+    "name": "uk-nav-divider",
+    "description": "Divider element within a navigation component",
+    "properties": [
+      "border-width: 1px 0 0 0",
+      "border-style: solid",
+      "border-color: hsl(var(--border))"
+    ]
+  },
+  {
+    "name": "uk-nav-sub",
+    "description": "Submenu within a navigation component",
+    "properties": ["margin-inline-start: 1.25rem", "margin-inline-end: 0.25rem"]
+  },
+  {
+    "name": "uk-nav-parent-icon",
+    "description": "Icon for parent items with submenus",
+    "properties": [
+      "margin-inline-start: auto",
+      "transition: transform 0.3s ease-out"
+    ]
+  },
+  {
+    "name": "uk-subnav",
+    "description": "Horizontal navigation component for tabs or pills",
+    "properties": ["display: flex", "align-items: center"]
+  },
+  {
+    "name": "uk-subnav-primary",
+    "description": "Primary styled subnav with primary color active state",
+    "properties": [
+      "--uk-subnav-item-active-background: hsl(var(--primary))",
+      "--uk-subnav-item-active-color: hsl(var(--primary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-subnav-secondary",
+    "description": "Secondary styled subnav with secondary color active state",
+    "properties": [
+      "--uk-subnav-item-active-background: hsl(var(--secondary))",
+      "--uk-subnav-item-active-color: hsl(var(--secondary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-subnav-destructive",
+    "description": "Destructive styled subnav with destructive color active state",
+    "properties": [
+      "--uk-subnav-item-active-background: hsl(var(--destructive))",
+      "--uk-subnav-item-active-color: hsl(var(--destructive-foreground))"
+    ]
+  },
+  {
+    "name": "uk-notification",
+    "description": "Notification component for displaying alerts",
+    "properties": [
+      "position: fixed",
+      "top: 10px",
+      "left: 10px",
+      "z-index: 1040",
+      "width: 350px"
+    ]
+  },
+  {
+    "name": "uk-notification-message",
+    "description": "Individual notification message container",
+    "properties": [
+      "position: relative",
+      "cursor: pointer",
+      "border-radius: var(--uk-global-radius)",
+      "box-shadow: var(--uk-global-shadow)",
+      "border: 1px solid hsl(var(--border))",
+      "background-color: hsl(var(--background))",
+      "padding: 1rem 1.5rem 1rem 1rem",
+      "color: hsl(var(--foreground))"
+    ]
+  },
+  {
+    "name": "uk-notification-close",
+    "description": "Close button for notification messages",
+    "properties": [
+      "position: absolute",
+      "right: 0.25rem",
+      "top: 0.25rem",
+      "padding: 0.25rem",
+      "color: hsl(var(--foreground) / 0.5)"
+    ]
+  },
+  {
+    "name": "uk-notification-message-primary",
+    "description": "Primary styled notification message",
+    "properties": [
+      "--uk-notification-border: 1px solid hsl(var(--primary))",
+      "--uk-notification-bg: hsl(var(--primary))",
+      "--uk-notification-color: hsl(var(--primary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-notification-message-secondary",
+    "description": "Secondary styled notification message",
+    "properties": [
+      "--uk-notification-border: 1px solid hsl(var(--secondary))",
+      "--uk-notification-bg: hsl(var(--secondary))",
+      "--uk-notification-color: hsl(var(--secondary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-notification-message-destructive",
+    "description": "Destructive styled notification message",
+    "properties": [
+      "--uk-notification-border: 1px solid hsl(var(--destructive))",
+      "--uk-notification-bg: hsl(var(--destructive))",
+      "--uk-notification-color: hsl(var(--destructive-foreground))"
+    ]
+  },
+  {
+    "name": "uk-offcanvas",
+    "description": "Off-canvas panel container for side navigation or content",
+    "properties": [
+      "display: none",
+      "position: fixed",
+      "top: 0",
+      "bottom: 0",
+      "left: 0",
+      "z-index: 1000"
+    ]
+  },
+  {
+    "name": "uk-offcanvas-bar",
+    "description": "Content container within the off-canvas panel",
+    "properties": [
+      "position: absolute",
+      "top: 0",
+      "bottom: 0",
+      "box-sizing: border-box",
+      "border-right-width: 1px",
+      "border-color: hsl(var(--border))",
+      "background-color: hsl(var(--background))"
+    ]
+  },
+  {
+    "name": "uk-offcanvas-flip",
+    "description": "Modifier to place the off-canvas panel on the right side",
+    "properties": []
+  },
+  {
+    "name": "uk-offcanvas-overlay",
+    "description": "Adds a semi-transparent overlay behind the off-canvas panel",
+    "properties": ["width: 100vw", "touch-action: none"]
+  },
+  {
+    "name": "uk-offcanvas-reveal",
+    "description": "Reveal animation variant for the off-canvas panel",
+    "properties": [
+      "position: absolute",
+      "top: 0",
+      "bottom: 0",
+      "left: 0",
+      "width: 0",
+      "overflow: hidden"
+    ]
+  },
+  {
+    "name": "uk-pgn",
+    "description": "Pagination component for navigation between pages",
+    "properties": [
+      "display: flex",
+      "flex-wrap: wrap",
+      "align-items: center",
+      "gap: 0.25rem"
+    ]
+  },
+  {
+    "name": "uk-pgn-xs",
+    "description": "Extra small size pagination variant",
+    "properties": [
+      "--uk-pgn-item-height: 1.75rem",
+      "--uk-pgn-item-padding: 0.375rem 0.75rem",
+      "--uk-pgn-item-font-size: var(--uk-global-font-size-s)",
+      "--uk-pgn-item-line-height: var(--uk-global-leading-s)"
+    ]
+  },
+  {
+    "name": "uk-pgn-sm",
+    "description": "Small size pagination variant",
+    "properties": [
+      "--uk-pgn-item-height: 2rem",
+      "--uk-pgn-item-padding: 0.5rem 1rem",
+      "--uk-pgn-item-font-size: var(--uk-global-font-size-s)",
+      "--uk-pgn-item-line-height: var(--uk-global-leading-s)"
+    ]
+  },
+  {
+    "name": "uk-pgn-md",
+    "description": "Medium size pagination variant",
+    "properties": [
+      "--uk-pgn-item-height: 3rem",
+      "--uk-pgn-item-padding: 0.75rem 1.5rem"
+    ]
+  },
+  {
+    "name": "uk-pgn-lg",
+    "description": "Large size pagination variant",
+    "properties": [
+      "--uk-pgn-item-height: 3.5rem",
+      "--uk-pgn-item-padding: 0.875rem 1.75rem"
+    ]
+  },
+  {
+    "name": "uk-pgn-default",
+    "description": "Default style pagination with border",
+    "properties": [
+      "--uk-pgn-item-border-color: hsl(var(--border))",
+      "--uk-pgn-item-bg: hsl(var(--background))",
+      "--uk-pgn-item-color: hsl(var(--foreground))"
+    ]
+  },
+  {
+    "name": "uk-pgn-primary",
+    "description": "Primary colored pagination",
+    "properties": [
+      "--uk-pgn-item-bg: hsl(var(--primary))",
+      "--uk-pgn-item-color: hsl(var(--primary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-pgn-secondary",
+    "description": "Secondary colored pagination",
+    "properties": [
+      "--uk-pgn-item-bg: hsl(var(--secondary))",
+      "--uk-pgn-item-color: hsl(var(--secondary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-pgn-ghost",
+    "description": "Ghost style pagination with hover effect only",
+    "properties": ["box-shadow: none"]
+  },
+  {
+    "name": "uk-pgn-destructive",
+    "description": "Destructive colored pagination",
+    "properties": [
+      "--uk-pgn-item-bg: hsl(var(--destructive))",
+      "--uk-pgn-item-color: hsl(var(--destructive-foreground))"
+    ]
+  },
+
+  {
+    "name": "uk-placeholder",
+    "description": "Creates a placeholder container with dashed border",
+    "properties": [
+      "margin-bottom: 1.25rem",
+      "padding: 2rem 2rem",
+      "background: transparent",
+      "border: 1px dashed",
+      "border-color: hsl(var(--border))"
+    ]
+  },
+  {
+    "name": "uk-position-top",
+    "description": "Positions an element at the top edge",
+    "properties": [
+      "position: absolute !important",
+      "top: 0",
+      "left: 0",
+      "right: 0"
+    ]
+  },
+  {
+    "name": "uk-position-bottom",
+    "description": "Positions an element at the bottom edge",
+    "properties": [
+      "position: absolute !important",
+      "bottom: 0",
+      "left: 0",
+      "right: 0"
+    ]
+  },
+  {
+    "name": "uk-position-left",
+    "description": "Positions an element at the left edge",
+    "properties": [
+      "position: absolute !important",
+      "top: 0",
+      "bottom: 0",
+      "left: 0"
+    ]
+  },
+  {
+    "name": "uk-position-right",
+    "description": "Positions an element at the right edge",
+    "properties": [
+      "position: absolute !important",
+      "top: 0",
+      "bottom: 0",
+      "right: 0"
+    ]
+  },
+  {
+    "name": "uk-position-top-left",
+    "description": "Positions an element at the top left corner",
+    "properties": ["position: absolute !important", "top: 0", "left: 0"]
+  },
+  {
+    "name": "uk-position-top-right",
+    "description": "Positions an element at the top right corner",
+    "properties": ["position: absolute !important", "top: 0", "right: 0"]
+  },
+  {
+    "name": "uk-position-bottom-left",
+    "description": "Positions an element at the bottom left corner",
+    "properties": ["position: absolute !important", "bottom: 0", "left: 0"]
+  },
+  {
+    "name": "uk-position-bottom-right",
+    "description": "Positions an element at the bottom right corner",
+    "properties": ["position: absolute !important", "bottom: 0", "right: 0"]
+  },
+  {
+    "name": "uk-position-center",
+    "description": "Centers an element horizontally and vertically",
+    "properties": [
+      "position: absolute !important",
+      "top: 50%",
+      "left: 50%",
+      "transform: translate(-50%, -50%)",
+      "width: max-content"
+    ]
+  },
+  {
+    "name": "uk-position-cover",
+    "description": "Makes an element cover its container",
+    "properties": [
+      "position: absolute",
+      "top: 0",
+      "bottom: 0",
+      "left: 0",
+      "right: 0"
+    ]
+  },
+  {
+    "name": "uk-position-relative",
+    "description": "Sets relative positioning on an element",
+    "properties": ["position: relative !important"]
+  },
+  {
+    "name": "uk-position-absolute",
+    "description": "Sets absolute positioning on an element",
+    "properties": ["position: absolute !important"]
+  },
+  {
+    "name": "uk-position-fixed",
+    "description": "Sets fixed positioning on an element",
+    "properties": ["position: fixed !important"]
+  },
+  {
+    "name": "uk-position-sticky",
+    "description": "Sets sticky positioning on an element",
+    "properties": ["position: sticky !important"]
+  },
+  {
+    "name": "uk-position-z-index",
+    "description": "Applies a standard z-index",
+    "properties": ["z-index: 1"]
+  },
+  {
+    "name": "uk-position-z-index-high",
+    "description": "Applies a high z-index",
+    "properties": ["z-index: 990"]
+  },
+  {
+    "name": "uk-position-small",
+    "description": "Applies small margins to positioned elements",
+    "properties": ["margin: 0.5rem", "--uk-position-margin-offset: 0.5rem"]
+  },
+  {
+    "name": "uk-position-medium",
+    "description": "Applies medium margins to positioned elements",
+    "properties": ["margin: 2.5rem", "--uk-position-margin-offset: 2.5rem"]
+  },
+  {
+    "name": "uk-position-large",
+    "description": "Applies large margins to positioned elements",
+    "properties": ["margin: 5rem", "--uk-position-margin-offset: 5rem"]
+  },
+  {
+    "name": "uk-progress",
+    "description": "Creates a progress bar component",
+    "properties": [
+      "display: block",
+      "width: 100%",
+      "border: 0",
+      "margin-bottom: 1.25rem",
+      "height: 1rem",
+      "border-radius: 500px",
+      "overflow: hidden",
+      "background-color: hsl(var(--primary) / 0.2)"
+    ]
+  },
+  {
+    "name": "uk-slider",
+    "description": "Creates a slider component for scrollable content",
+    "properties": ["-webkit-tap-highlight-color: transparent"]
+  },
+  {
+    "name": "uk-slider-container",
+    "description": "Container for the slider component",
+    "properties": ["overflow: hidden"]
+  },
+  {
+    "name": "uk-slider-items",
+    "description": "Container for items within the slider",
+    "properties": [
+      "display: flex",
+      "will-change: transform",
+      "position: relative",
+      "touch-action: pan-y"
+    ]
+  },
+  {
+    "name": "uk-slidenav",
+    "description": "Navigation controls for slider components",
+    "properties": [
+      "box-shadow: var(--uk-global-shadow-s)",
+      "display: inline-flex",
+      "height: 2.25rem",
+      "width: 2.25rem",
+      "align-items: center",
+      "justify-content: center",
+      "border-radius: 9999px",
+      "border-width: 1px",
+      "border-color: hsl(var(--input))",
+      "background-color: hsl(var(--background))"
+    ]
+  },
+  {
+    "name": "uk-slidenav-container",
+    "description": "Container for slidenav controls",
+    "properties": ["display: flex"]
+  },
+  {
+    "name": "uk-slideshow",
+    "description": "Creates a slideshow component for transitioning content",
+    "properties": ["-webkit-tap-highlight-color: transparent"]
+  },
+  {
+    "name": "uk-slideshow-items",
+    "description": "Container for items within a slideshow",
+    "properties": [
+      "position: relative",
+      "z-index: 0",
+      "margin: 0",
+      "padding: 0",
+      "list-style: none",
+      "overflow: hidden",
+      "touch-action: pan-y"
+    ]
+  },
+  {
+    "name": "uk-sortable",
+    "description": "Creates a sortable list with drag and drop capability",
+    "properties": ["position: relative"]
+  },
+  {
+    "name": "uk-sortable-drag",
+    "description": "Styles for an element being dragged",
+    "properties": [
+      "position: fixed !important",
+      "z-index: 1050 !important",
+      "pointer-events: none"
+    ]
+  },
+  {
+    "name": "uk-sortable-placeholder",
+    "description": "Placeholder shown during sorting",
+    "properties": ["opacity: 0", "pointer-events: none"]
+  },
+  {
+    "name": "uk-sortable-empty",
+    "description": "Styling for empty sortable areas",
+    "properties": ["min-height: 3.5rem"]
+  },
+  {
+    "name": "uk-spinner",
+    "description": "Creates a loading spinner animation",
+    "properties": ["animation: uk-spinner-rotate 1.4s linear infinite"]
+  },
+
+  {
+    "name": "uk-stepper",
+    "description": "Creates a step-by-step navigation component",
+    "properties": ["display: flex"]
+  },
+  {
+    "name": "uk-stepper-counter",
+    "description": "Creates a stepper with numbered indicators",
+    "properties": ["counter-reset: item-counter"]
+  },
+  {
+    "name": "uk-stepper-default",
+    "description": "Default styling for the stepper component",
+    "properties": [
+      "justify-content: start",
+      "color: hsl(var(--muted-foreground))",
+      "flex-wrap: wrap",
+      "font-size: 0.875rem"
+    ]
+  },
+  {
+    "name": "uk-stepper-checked",
+    "description": "Styling for completed steps in the stepper",
+    "properties": ["color: hsl(var(--foreground))"]
+  },
+  {
+    "name": "uk-sticky",
+    "description": "Creates an element that becomes fixed when scrolling",
+    "properties": [
+      "position: relative",
+      "z-index: 980",
+      "box-sizing: border-box"
+    ]
+  },
+  {
+    "name": "uk-sticky-fixed",
+    "description": "Styling applied to sticky elements in fixed state",
+    "properties": ["margin: 0 !important", "backface-visibility: hidden"]
+  },
+  {
+    "name": "uk-sticky-placeholder",
+    "description": "Placeholder element for sticky positioning",
+    "properties": ["pointer-events: none"]
+  },
+  {
+    "name": "uk-svg",
+    "description": "Styles for SVG elements to use currentColor for fill and stroke",
+    "properties": [
+      "fill: currentcolor",
+      "stroke: currentcolor",
+      "transform: translate(0, 0)"
+    ]
+  },
+  {
+    "name": "uk-switcher",
+    "description": "Content container for switchable items",
+    "properties": ["display: none"]
+  },
+  {
+    "name": "uk-tab",
+    "description": "Horizontal navigation tabs",
+    "properties": [
+      "display: flex",
+      "flex-wrap: wrap",
+      "padding: 0",
+      "position: relative",
+      "list-style: none",
+      "color: hsl(var(--muted-foreground))"
+    ]
+  },
+  {
+    "name": "uk-tab-bottom",
+    "description": "Tabs positioned at the bottom of the content",
+    "properties": ["--uk-tab-bottom-before-inset: 0 0 auto 0"]
+  },
+  {
+    "name": "uk-tab-left",
+    "description": "Vertical tabs positioned to the left of the content",
+    "properties": [
+      "flex-direction: column",
+      "margin-left: 0",
+      "--uk-tab-left-before-inset: 0 0 0 auto",
+      "--uk-tab-left-before-border: 1px solid hsl(var(--border))"
+    ]
+  },
+  {
+    "name": "uk-tab-right",
+    "description": "Vertical tabs positioned to the right of the content",
+    "properties": [
+      "flex-direction: column",
+      "margin-left: 0",
+      "--uk-tab-right-before-inset: 0 auto 0 0",
+      "--uk-tab-right-before-border: 1px solid hsl(var(--border))"
+    ]
+  },
+  {
+    "name": "uk-tab-alt",
+    "description": "Alternative tab style with pill-like appearance",
+    "properties": [
+      "display: flex",
+      "height: 2.25rem",
+      "width: 100%",
+      "align-items: center",
+      "justify-content: center",
+      "padding: 0.25rem",
+      "border-radius: var(--uk-global-radius)",
+      "background-color: hsl(var(--muted))",
+      "color: hsl(var(--muted-foreground))"
+    ]
+  },
+
+  {
+    "name": "uk-table",
+    "description": "Basic table component with styling",
+    "properties": [
+      "width: 100%",
+      "border-collapse: collapse",
+      "border-spacing: 0"
+    ]
+  },
+  {
+    "name": "uk-table-middle",
+    "description": "Aligns table cells vertically in the middle",
+    "properties": ["vertical-align: middle !important"]
+  },
+  {
+    "name": "uk-table-divider",
+    "description": "Adds divider lines between table rows",
+    "properties": ["border-top: 1px solid hsl(var(--border))"]
+  },
+  {
+    "name": "uk-table-striped",
+    "description": "Adds alternating background colors to table rows",
+    "properties": [
+      "border-top: 1px solid hsl(var(--border))",
+      "border-bottom: 1px solid hsl(var(--border))",
+      "background-color: hsl(var(--muted) / 0.5)"
+    ]
+  },
+  {
+    "name": "uk-table-hover",
+    "description": "Adds hover effect to table rows",
+    "properties": [
+      "background-color: hsl(var(--muted) / 0.5)",
+      "transition: background-color 150ms ease-in-out"
+    ]
+  },
+  {
+    "name": "uk-table-justify",
+    "description": "Removes padding from first and last cells for edge-to-edge content",
+    "properties": ["padding-left: 0", "padding-right: 0"]
+  },
+  {
+    "name": "uk-table-shrink",
+    "description": "Makes a table column as small as possible",
+    "properties": ["width: 1px"]
+  },
+  {
+    "name": "uk-table-expand",
+    "description": "Makes a table column expand to fill available space",
+    "properties": ["min-width: 10rem"]
+  },
+  {
+    "name": "uk-table-link",
+    "description": "Removes padding from cells and applies it to links instead",
+    "properties": ["padding: 0 !important", "display: block"]
+  },
+  {
+    "name": "uk-table-sm",
+    "description": "Small size variant for tables with reduced padding",
+    "properties": ["--uk-table-cell-padding: 0.625rem 0.75rem"]
+  },
+  {
+    "name": "uk-table-lg",
+    "description": "Large size variant for tables with increased padding",
+    "properties": ["--uk-table-cell-padding: 1.5rem 0.75rem"]
+  },
+  {
+    "name": "uk-tag",
+    "description": "Creates a tag element for categorization or metadata",
+    "properties": [
+      "display: inline-flex",
+      "align-items: center",
+      "min-height: 1.75rem",
+      "padding: 0.25rem 0.5rem",
+      "gap: 0.5rem",
+      "font-size: var(--uk-global-font-size-s)",
+      "line-height: var(--uk-global-leading-s)",
+      "border-radius: var(--uk-global-radius-s)",
+      "background-color: transparent",
+      "color: hsl(var(--foreground))"
+    ]
+  },
+  {
+    "name": "uk-tag-primary",
+    "description": "Primary colored tag variant",
+    "properties": [
+      "--uk-tag-bg: hsl(var(--primary))",
+      "--uk-tag-color: hsl(var(--primary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-tag-secondary",
+    "description": "Secondary colored tag variant",
+    "properties": [
+      "--uk-tag-bg: hsl(var(--secondary))",
+      "--uk-tag-color: hsl(var(--secondary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-tag-destructive",
+    "description": "Destructive colored tag variant",
+    "properties": [
+      "--uk-tag-bg: hsl(var(--destructive))",
+      "--uk-tag-color: hsl(var(--destructive-foreground))"
+    ]
+  },
+  {
+    "name": "uk-theme-switcher",
+    "description": "Component for switching between different themes",
+    "properties": [
+      "display: flex",
+      "flex: 1 1 auto",
+      "flex-direction: column",
+      "gap: 1rem"
+    ]
+  },
+  {
+    "name": "uk-theme-switcher-key",
+    "description": "Title or label section of the theme switcher",
+    "properties": [
+      "gap: 0.5rem",
+      "display: flex",
+      "flex-direction: column",
+      "margin: 1rem 0 0 0"
+    ]
+  },
+  {
+    "name": "uk-theme-switcher-value",
+    "description": "Container for theme options",
+    "properties": [
+      "display: grid",
+      "grid-template-columns: repeat(3, minmax(0, 1fr))",
+      "gap: 0.5rem"
+    ]
+  },
+  {
+    "name": "uk-theme-switcher-hex",
+    "description": "Color preview element within theme switcher",
+    "properties": [
+      "display: flex",
+      "height: 1rem",
+      "width: 1rem",
+      "flex-shrink: 0",
+      "transform: translateX(-0.25rem)",
+      "align-items: center",
+      "justify-content: center",
+      "border-radius: 9999px"
+    ]
+  },
+  {
+    "name": "uk-radii-none",
+    "description": "Theme preset with no border radius",
+    "properties": ["--uk-global-radius-s: 0", "--uk-global-radius: 0"]
+  },
+  {
+    "name": "uk-radii-sm",
+    "description": "Theme preset with small border radius",
+    "properties": [
+      "--uk-global-radius-s: 0.25rem",
+      "--uk-global-radius: 0.125rem"
+    ]
+  },
+  {
+    "name": "uk-radii-lg",
+    "description": "Theme preset with large border radius",
+    "properties": [
+      "--uk-global-radius-s: 0.375rem",
+      "--uk-global-radius: 0.5rem"
+    ]
+  },
+  {
+    "name": "uk-shadows-none",
+    "description": "Theme preset with no shadows",
+    "properties": [
+      "--uk-global-shadow-s: 0 0 0 0",
+      "--uk-global-shadow: 0 0 0 0"
+    ]
+  },
+  {
+    "name": "uk-shadows-md",
+    "description": "Theme preset with medium shadows",
+    "properties": [
+      "--uk-global-shadow-s: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+      "--uk-global-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)"
+    ]
+  },
+  {
+    "name": "uk-shadows-lg",
+    "description": "Theme preset with large shadows",
+    "properties": [
+      "--uk-global-shadow-s: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+      "--uk-global-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)"
+    ]
+  },
+  {
+    "name": "uk-font-sm",
+    "description": "Theme preset with small font sizes",
+    "properties": [
+      "--uk-global-font-size: 0.875rem",
+      "--uk-global-leading: 1.25rem",
+      "--uk-global-font-size-s: 0.75rem",
+      "--uk-global-leading-s: 1rem"
+    ]
+  },
+
+  {
+    "name": "uk-thumbnav",
+    "description": "Navigation component for image thumbnails",
+    "properties": [
+      "display: flex",
+      "flex-wrap: wrap",
+      "list-style: none",
+      "margin-left: -1rem"
+    ]
+  },
+  {
+    "name": "uk-thumbnav-vertical",
+    "description": "Vertical layout for thumbnail navigation",
+    "properties": [
+      "flex-direction: column",
+      "margin-left: 0",
+      "margin-top: -1rem"
+    ]
+  },
+  {
+    "name": "uk-tooltip",
+    "description": "Creates a tooltip component",
+    "properties": [
+      "display: none",
+      "position: absolute",
+      "z-index: 1030",
+      "max-width: 208px",
+      "padding: 0.375rem 0.75rem",
+      "font-size: var(--uk-global-font-size-s)",
+      "line-height: var(--uk-global-leading-s)",
+      "border-radius: var(--uk-global-radius)",
+      "background-color: hsl(var(--primary))",
+      "color: hsl(var(--primary-foreground))"
+    ]
+  },
+  {
+    "name": "uk-transition-fade",
+    "description": "Creates a fade transition effect",
+    "properties": [
+      "opacity: 0",
+      "transition: 0.3s ease-out",
+      "transition-property: opacity, transform, filter"
+    ]
+  },
+  {
+    "name": "uk-transition-scale-up",
+    "description": "Scale up transition effect",
+    "properties": ["--uk-scale-x: 1", "--uk-scale-y: 1"]
+  },
+  {
+    "name": "uk-transition-scale-down",
+    "description": "Scale down transition effect",
+    "properties": ["--uk-scale-x: 1.03", "--uk-scale-y: 1.03"]
+  },
+  {
+    "name": "uk-transition-slide-top",
+    "description": "Slide from top transition effect",
+    "properties": ["--uk-translate-y: -100%"]
+  },
+  {
+    "name": "uk-transition-slide-bottom",
+    "description": "Slide from bottom transition effect",
+    "properties": ["--uk-translate-y: 100%"]
+  },
+  {
+    "name": "uk-transition-slide-left",
+    "description": "Slide from left transition effect",
+    "properties": ["--uk-translate-x: -100%"]
+  },
+  {
+    "name": "uk-transition-slide-right",
+    "description": "Slide from right transition effect",
+    "properties": ["--uk-translate-x: 100%"]
+  },
+  {
+    "name": "uk-transition-opaque",
+    "description": "Sets a transition element to be fully opaque",
+    "properties": ["opacity: 1"]
+  },
+  {
+    "name": "uk-transition-slow",
+    "description": "Makes transitions happen more slowly",
+    "properties": ["transition-duration: 0.7s"]
+  },
+  {
+    "name": "uk-text-lead",
+    "description": "Creates a lead paragraph with larger text",
+    "properties": [
+      "font-size: 1.25rem",
+      "line-height: 1.75rem",
+      "color: hsl(var(--muted-foreground))"
+    ]
+  },
+  {
+    "name": "uk-text-meta",
+    "description": "Creates smaller text for metadata",
+    "properties": ["color: hsl(var(--muted-foreground))"]
+  },
+  {
+    "name": "uk-text-background",
+    "description": "Creates text with a gradient background",
+    "properties": [
+      "-webkit-background-clip: text",
+      "color: transparent !important",
+      "display: inline-block",
+      "background-color: #1e87f0",
+      "background-image: linear-gradient(90deg, #1e87f0 0%, #411ef0 100%)"
+    ]
+  },
+  {
+    "name": "uk-paragraph",
+    "description": "Styles for paragraphs with proper spacing",
+    "properties": ["line-height: 1.75rem", "margin-top: 1.5rem"]
+  },
+  {
+    "name": "uk-blockquote",
+    "description": "Styles for block quotations",
+    "properties": [
+      "margin-top: 1.5rem",
+      "border-left-width: 2px",
+      "border-color: hsl(var(--border))",
+      "padding-left: 1.5rem",
+      "font-style: italic"
+    ]
+  },
+  {
+    "name": "uk-codespan",
+    "description": "Styles for inline code elements",
+    "properties": [
+      "position: relative",
+      "border-radius: 0.25rem",
+      "background-color: hsl(var(--muted))",
+      "padding: 0.2rem 0.3rem",
+      "font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace",
+      "font-weight: 600"
+    ]
+  },
+  {
+    "name": "uk-kbd",
+    "description": "Styles for keyboard input elements",
+    "properties": [
+      "display: inline-flex",
+      "align-items: center",
+      "padding: 0 0.375rem",
+      "border-radius: var(--uk-global-radius)",
+      "border-width: 1px",
+      "border-style: solid",
+      "border-color: hsl(var(--border))",
+      "background-color: hsl(var(--muted))",
+      "font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace",
+      "font-size: 0.8rem",
+      "font-weight: 500",
+      "color: hsl(var(--muted-foreground))"
+    ]
+  },
+  {
+    "name": "uk-h1",
+    "description": "Heading level 1 styling",
+    "properties": [
+      "font-size: 2.25rem",
+      "font-weight: 800",
+      "letter-spacing: -0.025em",
+      "line-height: 1"
+    ]
+  },
+  {
+    "name": "uk-h2",
+    "description": "Heading level 2 styling",
+    "properties": [
+      "font-size: 1.875rem",
+      "font-weight: 600",
+      "letter-spacing: -0.025em",
+      "line-height: 1"
+    ]
+  },
+  {
+    "name": "uk-h3",
+    "description": "Heading level 3 styling",
+    "properties": [
+      "font-size: 1.5rem",
+      "font-weight: 600",
+      "letter-spacing: -0.025em",
+      "line-height: 1"
+    ]
+  },
+  {
+    "name": "uk-h4",
+    "description": "Heading level 4 styling",
+    "properties": [
+      "font-size: 1.25rem",
+      "font-weight: 600",
+      "letter-spacing: -0.025em",
+      "line-height: 1"
+    ]
+  },
+  {
+    "name": "uk-heading-divider",
+    "description": "Heading with a bottom border divider",
+    "properties": [
+      "padding-bottom: calc(5px + 0.1em)",
+      "border-bottom-width: calc(0.2px + 0.05em)",
+      "border-bottom-style: solid",
+      "border-bottom-color: hsl(var(--border))"
+    ]
+  },
+  {
+    "name": "uk-heading-bullet",
+    "description": "Heading with a bullet decoration on the left",
+    "properties": ["position: relative"]
+  },
+  {
+    "name": "uk-heading-line",
+    "description": "Heading with horizontal lines on both sides",
+    "properties": ["overflow: hidden"]
+  },
+  {
+    "name": "uk-overflow-hidden",
+    "description": "Hides overflow content",
+    "properties": ["overflow: hidden"]
+  },
+  {
+    "name": "uk-overflow-auto",
+    "description": "Adds scrollbars when content overflows",
+    "properties": ["overflow: auto"]
+  },
+  {
+    "name": "uk-resize",
+    "description": "Makes an element resizable in both directions",
+    "properties": ["resize: both"]
+  },
+  {
+    "name": "uk-resize-horizontal",
+    "description": "Makes an element horizontally resizable",
+    "properties": ["resize: horizontal"]
+  },
+  {
+    "name": "uk-resize-vertical",
+    "description": "Makes an element vertically resizable",
+    "properties": ["resize: vertical"]
+  },
+  {
+    "name": "uk-inline-clip",
+    "description": "Clips content within an inline container",
+    "properties": ["overflow: hidden"]
+  },
+  {
+    "name": "uk-responsive-width",
+    "description": "Makes an element's width responsive",
+    "properties": ["max-width: 100% !important", "height: auto"]
+  },
+  {
+    "name": "uk-responsive-height",
+    "description": "Makes an element's height responsive",
+    "properties": ["max-height: 100%", "width: auto", "max-width: none"]
+  },
+  {
+    "name": "uk-disabled",
+    "description": "Disables pointer events on an element",
+    "properties": ["pointer-events: none"]
+  },
+  {
+    "name": "uk-transform-center",
+    "description": "Centers an element using transform",
+    "properties": ["transform: translate(-50%, -50%)"]
+  },
+  {
+    "name": "uk-text-right",
+    "description": "Aligns text to the right",
+    "properties": ["text-align: right"]
+  },
+  {
+    "name": "uk-text-center",
+    "description": "Centers text horizontally",
+    "properties": ["text-align: center"]
+  },
+  {
+    "name": "uk-text-break",
+    "description": "Breaks long text to prevent overflow",
+    "properties": ["overflow-wrap: break-word"]
+  },
+  {
+    "name": "uk-rounded",
+    "description": "Applies standard border radius",
+    "properties": ["border-radius: var(--uk-global-radius)"]
+  },
+  {
+    "name": "uk-rounded-sm",
+    "description": "Applies small border radius",
+    "properties": ["border-radius: var(--uk-global-radius-s)"]
+  },
+  {
+    "name": "uk-shadow",
+    "description": "Applies standard box shadow",
+    "properties": ["box-shadow: var(--uk-global-shadow)"]
+  },
+  {
+    "name": "uk-shadow-sm",
+    "description": "Applies small box shadow",
+    "properties": ["box-shadow: var(--uk-global-shadow-s)"]
+  },
+  {
+    "name": "uk-text-sm",
+    "description": "Applies small text size",
+    "properties": [
+      "font-size: var(--uk-global-font-size-s)",
+      "line-height: var(--uk-global-leading-s)"
+    ]
+  },
+  {
+    "name": "uk-text-base",
+    "description": "Applies base text size",
+    "properties": [
+      "font-size: var(--uk-global-font-size)",
+      "line-height: var(--uk-global-leading)"
+    ]
+  },
+
+  {
+    "name": "uk-input",
+    "description": "Styles for text input fields",
+    "properties": [
+      "overflow: visible",
+      "max-width: 100%",
+      "width: 100%",
+      "vertical-align: middle",
+      "display: inline-block",
+      "border-width: 1px",
+      "border-style: solid",
+      "border-color: hsl(var(--input))",
+      "background-color: transparent",
+      "color: hsl(var(--foreground))"
+    ]
+  },
+  {
+    "name": "uk-select",
+    "description": "Styles for dropdown select menus",
+    "properties": [
+      "text-transform: none",
+      "max-width: 100%",
+      "width: 100%",
+      "vertical-align: middle",
+      "display: inline-block",
+      "border-width: 1px",
+      "border-style: solid",
+      "border-color: hsl(var(--input))",
+      "background-color: transparent",
+      "color: hsl(var(--foreground))"
+    ]
+  },
+  {
+    "name": "uk-textarea",
+    "description": "Styles for multi-line text areas",
+    "properties": [
+      "overflow: auto",
+      "max-width: 100%",
+      "width: 100%",
+      "vertical-align: top",
+      "min-height: 4rem",
+      "border-width: 1px",
+      "border-style: solid",
+      "border-color: hsl(var(--input))",
+      "background-color: transparent",
+      "color: hsl(var(--foreground))"
+    ]
+  },
+  {
+    "name": "uk-radio",
+    "description": "Styles for radio button inputs",
+    "properties": [
+      "display: inline-block",
+      "height: 1rem",
+      "width: 1rem",
+      "overflow: hidden",
+      "margin-top: -4px",
+      "vertical-align: middle",
+      "border-radius: 50%",
+      "border: 1px solid hsl(var(--primary))"
+    ]
+  },
+  {
+    "name": "uk-checkbox",
+    "description": "Styles for checkbox inputs",
+    "properties": [
+      "display: inline-block",
+      "height: 1rem",
+      "width: 1rem",
+      "overflow: hidden",
+      "margin-top: -4px",
+      "vertical-align: middle",
+      "border: 1px solid hsl(var(--primary))"
+    ]
+  },
+  {
+    "name": "uk-form-label",
+    "description": "Styles for form field labels",
+    "properties": ["font-size: 0.875rem", "font-weight: 500", "line-height: 1"]
+  },
+  {
+    "name": "uk-form-label-required",
+    "description": "Styles for required form field labels with asterisk",
+    "properties": ["content: ' *'", "color: hsl(var(--destructive))"]
+  },
+  {
+    "name": "uk-form-stacked",
+    "description": "Stacked form layout with labels above inputs",
+    "properties": ["display: block", "margin-bottom: 5px"]
+  },
+  {
+    "name": "uk-form-icon",
+    "description": "Container for icons within form inputs",
+    "properties": [
+      "position: absolute",
+      "top: 0",
+      "bottom: 0",
+      "left: 0",
+      "width: 2.5rem",
+      "display: inline-flex",
+      "justify-content: center",
+      "align-items: center"
+    ]
+  },
+  {
+    "name": "uk-form-icon-flip",
+    "description": "Positions an icon on the right side of a form input",
+    "properties": ["right: 0", "left: auto"]
+  },
+  {
+    "name": "uk-toggle-switch",
+    "description": "Creates a toggle switch control",
+    "properties": [
+      "appearance: none",
+      "position: relative",
+      "box-sizing: border-box",
+      "border-radius: 2rem",
+      "height: 1.25rem",
+      "width: 2.25rem",
+      "background-color: hsl(var(--input))"
+    ]
+  },
+  {
+    "name": "uk-toggle-switch-primary",
+    "description": "Primary color variant for toggle switches",
+    "properties": ["background-color: hsl(var(--primary))"]
+  },
+  {
+    "name": "uk-toggle-switch-destructive",
+    "description": "Destructive color variant for toggle switches",
+    "properties": ["background-color: hsl(var(--destructive))"]
+  },
+  {
+    "name": "uk-form-help",
+    "description": "Help or hint text for form fields",
+    "properties": ["font-size: 0.8rem", "font-weight: 500"]
+  },
+  {
+    "name": "uk-input-fake",
+    "description": "Non-input element styled to look like an input",
+    "properties": [
+      "max-width: 100%",
+      "width: 100%",
+      "display: flex",
+      "align-items: center",
+      "border-width: 1px",
+      "border-style: solid",
+      "border-color: hsl(var(--input))",
+      "background-color: transparent"
+    ]
+  },
+  {
+    "name": "uk-form-custom",
+    "description": "Container for custom form controls",
+    "properties": [
+      "display: inline-block",
+      "position: relative",
+      "max-width: 100%",
+      "vertical-align: middle"
+    ]
+  },
+  {
+    "name": "uk-form-destructive",
+    "description": "Destructive styling for form elements",
+    "properties": [
+      "box-shadow: 0 0 0 0 transparent, 0 0 0 1px hsl(var(--destructive)), 0 0 #0000"
+    ]
+  },
+  {
+    "name": "uk-form-blank",
+    "description": "Minimal styling for form inputs without borders",
+    "properties": [
+      "background: none",
+      "border-color: transparent",
+      "box-shadow: none"
+    ]
+  },
+  {
+    "name": "uk-form-xs",
+    "description": "Extra small size variant for form controls",
+    "properties": [
+      "font-size: var(--uk-global-font-size-s)",
+      "line-height: var(--uk-global-leading-s)",
+      "height: 1.75rem",
+      "padding: 0.25rem 0.5rem"
+    ]
+  },
+  {
+    "name": "uk-form-sm",
+    "description": "Small size variant for form controls",
+    "properties": [
+      "font-size: var(--uk-global-font-size-s)",
+      "line-height: var(--uk-global-leading-s)",
+      "height: 2rem",
+      "padding: 0.25rem 0.5rem"
+    ]
+  },
+  {
+    "name": "uk-form-md",
+    "description": "Medium size variant for form controls",
+    "properties": ["height: 3rem", "padding: 0.5rem 1rem"]
+  },
+  {
+    "name": "uk-form-lg",
+    "description": "Large size variant for form controls",
+    "properties": ["height: 3.5rem", "padding: 0.5rem 1rem"]
+  },
+  {
+    "name": "uk-custom-select-search",
+    "description": "Search input container for custom select component",
+    "properties": ["display: flex", "align-items: center", "padding: 0 0.75rem"]
+  },
+  {
+    "name": "uk-custom-select-options",
+    "description": "Options container for custom select with scrollable area",
+    "properties": ["max-height: 10rem"]
+  },
+  {
+    "name": "uk-custom-select-item-wrapper",
+    "description": "Wrapper for individual items in custom select",
+    "properties": ["display: flex", "flex: 1", "align-items: center"]
+  },
+  {
+    "name": "uk-custom-select-item-icon",
+    "description": "Icon element for items in custom select",
+    "properties": ["margin: 0 0.5rem 0 0", "flex-shrink: 0"]
+  },
+  {
+    "name": "uk-custom-select-item-text",
+    "description": "Text element for items in custom select",
+    "properties": ["flex: 1"]
+  },
+  {
+    "name": "uk-custom-select-item-check",
+    "description": "Checkmark element for selected items in custom select",
+    "properties": ["margin: 0 0 0 0.5rem", "flex-shrink: 0"]
+  },
+  {
+    "name": "uk-keyval",
+    "description": "Key-value pair component container",
+    "properties": [
+      "border-radius: var(--uk-global-radius)",
+      "box-shadow: var(--uk-global-shadow)",
+      "border-width: 1px",
+      "border-color: hsl(var(--border))"
+    ]
+  },
+  {
+    "name": "uk-keyval-value-wrapper",
+    "description": "Container for value element in key-value pair",
+    "properties": ["width: 100%"]
+  },
+  {
+    "name": "uk-keyval-actions",
+    "description": "Container for action buttons in key-value pair",
+    "properties": ["display: flex", "flex-wrap: nowrap", "column-gap: 0.5rem"]
+  },
+  {
+    "name": "uk-input-pin",
+    "description": "PIN input component with connected input fields",
+    "properties": [
+      "display: inline-flex",
+      "align-items: center",
+      "border-radius: var(--uk-form-input-radius)",
+      "box-shadow: var(--uk-form-input-shadow)"
+    ]
+  },
+  {
+    "name": "uk-input-pin-separated",
+    "description": "PIN input variant with separated input fields",
+    "properties": ["gap: 0.5rem", "box-shadow: none"]
+  },
+
+  {
+    "name": "uk-range",
+    "description": "Range slider input for selecting numeric values",
+    "properties": [
+      "box-sizing: border-box",
+      "margin: 0",
+      "vertical-align: middle",
+      "max-width: 100%",
+      "width: 100%",
+      "background: transparent"
+    ]
+  },
+  {
+    "name": "uk-input-range",
+    "description": "Custom implementation of range slider with enhanced styling",
+    "properties": [
+      "position: relative",
+      "display: block",
+      "height: 2.5rem",
+      "user-select: none"
+    ]
+  },
+  {
+    "name": "uk-input-range-runnable-track",
+    "description": "Base track for the range slider",
+    "properties": [
+      "border-radius: var(--uk-global-radius)",
+      "background-color: hsl(var(--primary) / 0.2)",
+      "position: absolute",
+      "left: 0",
+      "right: 0",
+      "top: 50%",
+      "height: 0.375rem",
+      "transform: translateY(-50%)"
+    ]
+  },
+  {
+    "name": "uk-input-range-track",
+    "description": "Active portion of the range slider track",
+    "properties": [
+      "border-radius: var(--uk-global-radius)",
+      "background-color: hsl(var(--primary))",
+      "position: absolute",
+      "top: 50%",
+      "height: 0.375rem",
+      "transform: translateY(-50%)"
+    ]
+  },
+  {
+    "name": "uk-input-range-knob",
+    "description": "Draggable handle for the range slider",
+    "properties": [
+      "box-shadow: var(--uk-global-shadow)",
+      "position: absolute",
+      "top: 50%",
+      "height: 1rem",
+      "width: 1rem",
+      "transform: translate(-50%, -50%)",
+      "cursor: pointer",
+      "border-radius: 9999px",
+      "border: 1px solid hsl(var(--primary) / 0.5)",
+      "background-color: hsl(var(--background))"
+    ]
+  },
+  {
+    "name": "uk-input-range-label",
+    "description": "Value label for range slider",
+    "properties": [
+      "position: absolute",
+      "top: 1rem",
+      "transform: translateX(-50%)",
+      "white-space: nowrap"
+    ]
+  },
+  {
+    "name": "uk-rte",
+    "description": "Rich text editor container",
+    "properties": [
+      "box-shadow: var(--uk-global-shadow)",
+      "border-radius: var(--uk-global-radius)"
+    ]
+  },
+  {
+    "name": "uk-rte-header",
+    "description": "Header section of rich text editor with toolbar",
+    "properties": [
+      "border-top-left-radius: var(--uk-global-radius)",
+      "border-top-right-radius: var(--uk-global-radius)",
+      "display: flex",
+      "flex-wrap: nowrap",
+      "overflow: hidden",
+      "border-width: 1px",
+      "border-bottom-width: 0px",
+      "border-color: hsl(var(--border))",
+      "padding: 0.5rem"
+    ]
+  },
+  {
+    "name": "uk-rte-toolbar",
+    "description": "Toolbar containing formatting controls for the editor",
+    "properties": [
+      "margin-bottom: -2.5rem",
+      "display: flex",
+      "width: 100%",
+      "column-gap: 0.75rem",
+      "overflow-x: scroll",
+      "padding-bottom: 2.5rem"
+    ]
+  },
+  {
+    "name": "uk-rte-toolbar-group",
+    "description": "Group of related formatting controls in the toolbar",
+    "properties": ["display: flex", "gap: 0.25rem"]
+  },
+  {
+    "name": "uk-rte-footer",
+    "description": "Footer section of rich text editor",
+    "properties": [
+      "border-bottom-right-radius: var(--uk-global-radius)",
+      "border-bottom-left-radius: var(--uk-global-radius)",
+      "border-width: 1px",
+      "border-top-width: 0px",
+      "border-color: hsl(var(--border))",
+      "padding: 0.5rem",
+      "font-size: 0.75rem",
+      "line-height: 1rem"
+    ]
+  },
+  {
+    "name": "uk-input-tag",
+    "description": "Input field for adding and displaying multiple tags",
+    "properties": [
+      "display: flex",
+      "min-height: 2.5rem",
+      "padding: 0.5rem",
+      "gap: 0.25rem",
+      "flex-wrap: wrap",
+      "align-items: center",
+      "box-shadow: var(--uk-form-input-shadow)",
+      "border-radius: var(--uk-form-input-radius)",
+      "border-width: 1px",
+      "border-style: solid",
+      "border-color: hsl(var(--input))",
+      "background-color: transparent"
+    ]
+  },
+  {
+    "name": "uk-active",
+    "description": "Indicates the active item, state, or element",
+    "properties": []
+  },
+  {
+    "name": "uk-open",
+    "description": "Indicates an open item, state or element",
+    "properties": []
+  },
+  {
+    "name": "uk-disabled",
+    "description": "Indicates a disabled item, state or element",
+    "properties": []
+  }
+]

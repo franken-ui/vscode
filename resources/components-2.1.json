@@ -1,0 +1,752 @@
+[
+  {
+    "tagName": "uk-calendar",
+    "description": "A calendar component for date selection",
+    "attributes": [
+      {
+        "name": "value",
+        "description": "The current selected date in YYYY-MM-DD format",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "min",
+        "description": "The minimum date that can be selected in YYYY-MM-DD format",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "max",
+        "description": "The maximum date that can be selected in YYYY-MM-DD format",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "format",
+        "description": "Date format to use",
+        "type": "string",
+        "default": "YYYY-MM-DD"
+      },
+      {
+        "name": "locale",
+        "description": "Locale for date formatting",
+        "type": "string",
+        "default": "en-US"
+      },
+      {
+        "name": "today",
+        "description": "Automatically sets today as the active date",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "jumpable",
+        "description": "Allows user to select a month and type a year to jump to a specific date",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "starts-with",
+        "description": "Sets the starting day of the week: 0 (Sunday) or 1 (Monday)",
+        "type": "string",
+        "default": "0"
+      },
+      {
+        "name": "disabled-dates",
+        "description": "A comma-separated list of dates to disable in YYYY-MM-DD format",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "marked-dates",
+        "description": "A comma-separated list of dates to add an indicator in YYYY-MM-DD format",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "view-date",
+        "description": "Sets the initial view date of the calendar in YYYY-MM-DD format",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "name",
+        "description": "Sets the name of the hidden input field for form submission",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "cls-custom",
+        "description": "Allows adding custom CSS classes to the calendar",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "i18n",
+        "description": "Enables internationalization with custom weekday and month names",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "force-prevent-rerender",
+        "description": "Forcefully prevents component rerendering",
+        "type": "boolean",
+        "required": false
+      }
+    ]
+  },
+  {
+    "tagName": "uk-chart",
+    "description": "A chart component that wraps ApexCharts for easy integration",
+    "attributes": [
+      {
+        "name": "cls-custom",
+        "description": "Allows adding custom CSS classes to the chart container div",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "reactive",
+        "description": "Enables reactivity by monitoring the referenced script element for changes",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "force-prevent-rerender",
+        "description": "Forcefully prevents component rerendering",
+        "type": "boolean",
+        "required": false
+      }
+    ]
+  },
+  {
+    "tagName": "uk-command",
+    "description": "A command palette component that can be bound to keyboard shortcuts and toggled as a modal",
+    "attributes": [
+      {
+        "name": "key",
+        "description": "Assigns a keyboard shortcut to open the command palette",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "placeholder",
+        "description": "The placeholder text for the search input",
+        "type": "string",
+        "default": "Search"
+      },
+      {
+        "name": "toggle",
+        "description": "Used as the ID of the modal for manually toggling the component",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "force-prevent-rerender",
+        "description": "Forcefully prevents component rerendering",
+        "type": "boolean",
+        "required": false
+      }
+    ]
+  },
+  {
+    "tagName": "uk-icon",
+    "description": "An icon component using Lucide icons with customizable attributes",
+    "attributes": [
+      {
+        "name": "cls-custom",
+        "description": "Allows adding custom CSS classes to the SVG tag",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "icon",
+        "description": "Specifies the icon to display from the Lucide icon set",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "stroke-width",
+        "description": "Customizes the stroke width of the icon",
+        "type": "string",
+        "default": "2"
+      },
+      {
+        "name": "height",
+        "description": "Customizes the height of the icon",
+        "type": "string",
+        "default": "16"
+      },
+      {
+        "name": "width",
+        "description": "Customizes the width of the icon",
+        "type": "string",
+        "default": "16"
+      }
+    ]
+  },
+  {
+    "tagName": "uk-input-date",
+    "description": "A customizable date and time picker component with various display options",
+    "attributes": [
+      {
+        "name": "today",
+        "description": "Automatically sets today as the active date",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "jumpable",
+        "description": "Allows user to select a month and type a year to jump to a specific date",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "starts-with",
+        "description": "Sets the starting day of the week: 0 (Sunday) or 1 (Monday)",
+        "type": "string",
+        "default": "0"
+      },
+      {
+        "name": "disabled-dates",
+        "description": "A comma-separated list of dates to disable in YYYY-MM-DD format",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "marked-dates",
+        "description": "A comma-separated list of dates to add an indicator in YYYY-MM-DD format",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "view-date",
+        "description": "Sets the initial view date of the calendar in YYYY-MM-DD format",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "min",
+        "description": "Sets the minimum date that can be selected in YYYY-MM-DD format",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "max",
+        "description": "Sets the maximum date that can be selected in YYYY-MM-DD format",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "cls-custom",
+        "description": "Allows adding custom CSS classes to different parts of the component",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "disabled",
+        "description": "Disables all input fields, making the entire component read-only",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "name",
+        "description": "Defines the name of the input for form submission",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "value",
+        "description": "A valid date time in YYYY-MM-DD or YYYY-MM-DDTHH:MM format to prepopulate",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "i18n",
+        "description": "Enables internationalization with custom labels and text",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "icon",
+        "description": "Sets a customized icon (defaults to calendar if not specified)",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "drop",
+        "description": "Customizes the dropping options for the dropdown calendar",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "with-time",
+        "description": "Allows inputting of time along with the date",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "require-time",
+        "description": "Requires time input (prepopulates current time if left blank)",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "display-format",
+        "description": "Customizes the display format of the date using format tokens",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "force-prevent-rerender",
+        "description": "Forcefully prevents component rerendering",
+        "type": "boolean",
+        "required": false
+      }
+    ]
+  },
+  {
+    "tagName": "uk-input-pin",
+    "description": "A component for entering PIN codes or verification sequences",
+    "attributes": [
+      {
+        "name": "autofocus",
+        "description": "Automatically focuses on the first input field when the component is rendered",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "cls-custom",
+        "description": "Allows adding custom CSS classes to the component",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "disabled",
+        "description": "Disables all input fields, making the entire component read-only",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "length",
+        "description": "Specifies the number of input fields for the PIN sequence",
+        "type": "string",
+        "default": "6"
+      },
+      {
+        "name": "name",
+        "description": "Defines the name of the PIN input for form submission",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "force-prevent-rerender",
+        "description": "Forcefully prevents component rerendering",
+        "type": "boolean",
+        "required": false
+      }
+    ]
+  },
+  {
+    "tagName": "uk-input-range",
+    "description": "A customizable range slider component with single or dual knobs",
+    "attributes": [
+      {
+        "name": "name",
+        "description": "Specifies the name of the hidden input field for form submissions",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "disabled",
+        "description": "Disables the slider, preventing user interaction",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "multiple",
+        "description": "Enables dual-knob mode for selecting a range of values",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "min",
+        "description": "Defines the minimum selectable value",
+        "type": "string",
+        "default": "0"
+      },
+      {
+        "name": "max",
+        "description": "Defines the maximum selectable value",
+        "type": "string",
+        "default": "100"
+      },
+      {
+        "name": "step",
+        "description": "Specifies the interval between selectable values",
+        "type": "string",
+        "default": "1"
+      },
+      {
+        "name": "label",
+        "description": "Displays a value label above the knob (true for numbers, string for custom labels)",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "label-position",
+        "description": "Sets the position of the label relative to the knob (top or bottom)",
+        "type": "string",
+        "default": "top"
+      },
+      {
+        "name": "value",
+        "description": "Defines the initial value (single number or comma-separated range)",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "force-prevent-rerender",
+        "description": "Forcefully prevents component rerendering",
+        "type": "boolean",
+        "required": false
+      }
+    ]
+  },
+  {
+    "tagName": "uk-input-tag",
+    "description": "A component for creating and managing lists of tags or keywords",
+    "attributes": [
+      {
+        "name": "cls-custom",
+        "description": "Allows adding custom CSS classes to the component",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "disabled",
+        "description": "Disables input field, making the entire component read-only",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "maxlength",
+        "description": "The maximum length of each tag before it can be added",
+        "type": "string",
+        "default": "20"
+      },
+      {
+        "name": "minlength",
+        "description": "The minimum length of each tag before it can be added",
+        "type": "string",
+        "default": "1"
+      },
+      {
+        "name": "name",
+        "description": "The name of the input field for form submission ([] will be appended)",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "placeholder",
+        "description": "The placeholder text displayed in the input field",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "slugify",
+        "description": "Whether to slugify the input string before adding it as a tag",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "slugify-options",
+        "description": "Customization options for the slugify behavior",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "state",
+        "description": "The visual state of the tags (primary, secondary, or destructive)",
+        "type": "string",
+        "default": "secondary"
+      },
+      {
+        "name": "value",
+        "description": "A comma-separated list of tags to prepopulate in the component",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "force-prevent-rerender",
+        "description": "Forcefully prevents component rerendering",
+        "type": "boolean",
+        "required": false
+      }
+    ]
+  },
+  {
+    "tagName": "uk-input-time",
+    "description": "A time input component for selecting time in 12-hour format while outputting in 24-hour format",
+    "attributes": [
+      {
+        "name": "autofocus",
+        "description": "Automatically focuses on the input field when the component is rendered",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "cls-custom",
+        "description": "Allows adding custom CSS classes to the component",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "disabled",
+        "description": "Disables all input fields, making the entire component read-only",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "name",
+        "description": "Defines the name of the input for form submission",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "now",
+        "description": "Automatically sets the current time as the default value",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "value",
+        "description": "A time in 24-hour format to prepopulate in the input field",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "i18n",
+        "description": "Enables internationalization with custom AM/PM labels",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "force-prevent-rerender",
+        "description": "Forcefully prevents component rerendering",
+        "type": "boolean",
+        "required": false
+      }
+    ]
+  },
+  {
+    "tagName": "uk-keyval",
+    "description": "A component for creating and managing key-value pair tables",
+    "attributes": [
+      {
+        "name": "reactive",
+        "description": "Enables reactivity by monitoring changes to the referenced select element",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "sensitive",
+        "description": "Treats values as sensitive information, showing them as password fields with visibility toggle",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "noninsertable",
+        "description": "Disables the ability to add new rows to the table",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "max",
+        "description": "Sets the maximum number of rows allowed (0 means unlimited)",
+        "type": "number",
+        "default": 0
+      },
+      {
+        "name": "cls-custom",
+        "description": "Allows adding custom CSS classes to different parts of the component",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "i18n",
+        "description": "Enables internationalization with custom labels and placeholders",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "force-prevent-rerender",
+        "description": "Forcefully prevents component rerendering",
+        "type": "boolean",
+        "required": false
+      }
+    ]
+  },
+  {
+    "tagName": "uk-rte",
+    "description": "A rich text editor component built on TipTap for content editing",
+    "attributes": [
+      {
+        "name": "disabled",
+        "description": "Disables the editor, making it read-only",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "name",
+        "description": "Defines the name of the editor for form submission",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "placeholder",
+        "description": "The placeholder text displayed when the editor is empty",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "value",
+        "description": "Initial HTML content to populate the editor",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "force-prevent-rerender",
+        "description": "Forcefully prevents component rerendering",
+        "type": "boolean",
+        "required": false
+      }
+    ]
+  },
+  {
+    "tagName": "uk-select",
+    "description": "A custom select dropdown component that enhances the native select tag",
+    "attributes": [
+      {
+        "name": "name",
+        "description": "Specifies the name of the input field for form submission",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "multiple",
+        "description": "Allows selecting multiple options from the dropdown",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "disabled",
+        "description": "Disables the select component, preventing user interaction",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "placeholder",
+        "description": "Sets the placeholder text when no option is selected",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "searchable",
+        "description": "Adds a search input field to filter options in the dropdown",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "insertable",
+        "description": "Allows users to add new options that aren't in the original list",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "cls-custom",
+        "description": "Allows adding custom CSS classes to different parts of the component",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "i18n",
+        "description": "Enables internationalization with custom labels and text",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "reactive",
+        "description": "Enables monitoring the hidden select element for changes",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "value",
+        "description": "A comma-separated list of values to prepopulate in the select",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "icon",
+        "description": "Sets a customized icon for the select dropdown",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "drop",
+        "description": "Customizes the dropdown behavior and positioning",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "send-url",
+        "description": "The endpoint URL for AJAX requests when using insertable options",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "send-headers",
+        "description": "JSON-stringified HTTP headers for AJAX requests",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "send-method",
+        "description": "The HTTP method for AJAX requests (defaults to POST)",
+        "type": "string",
+        "default": "POST"
+      },
+      {
+        "name": "force-prevent-rerender",
+        "description": "Forcefully prevents component rerendering",
+        "type": "boolean",
+        "required": false
+      }
+    ]
+  },
+  {
+    "tagName": "uk-theme-switcher",
+    "description": "A theme customization component for switching color schemes, border radius, shadows, and more",
+    "attributes": [
+      {
+        "name": "cls-custom",
+        "description": "Allows adding custom CSS classes to the component",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "i18n",
+        "description": "Enables internationalization with custom labels and text",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "force-prevent-rerender",
+        "description": "Forcefully prevents component rerendering",
+        "type": "boolean",
+        "required": false
+      }
+    ]
+  }
+]

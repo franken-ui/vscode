@@ -1,26 +1,191 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
-import * as vscode from 'vscode';
+// src/extension.ts
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
-export function activate(context: vscode.ExtensionContext) {
+import * as vscode from "vscode";
+import {
+  ComponentCompletionProvider,
+  ComponentAttributeCompletionProvider,
+  ComponentHoverProvider,
+  ComponentAttributeHoverProvider,
+} from "./providers/components";
+import {
+  CSSClassCompletionProvider,
+  CSSClassHoverProvider,
+} from "./providers/selectors";
+import { detectFrameworkVersion, FrameworkVersion } from "./utils/version";
+import { reloadData } from "./utils/loader";
+import { type Component } from "./types";
+import { type CSSClass } from "./types";
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "franken-ui" is now active!');
+// Global state to hold the current components and classes
+let currentComponents: Component[] = [];
+let currentCssClasses: CSSClass[] = [];
+let currentVersion: FrameworkVersion | null = null;
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	const disposable = vscode.commands.registerCommand('franken-ui.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from franken-ui!');
-	});
+export async function activate(context: vscode.ExtensionContext) {
+  console.log("Franken UI extension is activating...");
 
-	context.subscriptions.push(disposable);
+  // Detect version and load initial data
+  currentVersion = await detectFrameworkVersion();
+  console.log(`Detected Franken UI version: ${currentVersion.version}`);
+
+  const data = await reloadData(context, currentVersion);
+  currentComponents = data.components;
+  currentCssClasses = data.cssClasses;
+
+  console.log(
+    `Loaded ${currentComponents.length} components and ${currentCssClasses.length} CSS classes`
+  );
+
+  // Register providers with the current data
+  registerProviders(context);
+
+  // Register status bar item to show current version
+  const statusBarItem = vscode.window.createStatusBarItem(
+    vscode.StatusBarAlignment.Right,
+    100
+  );
+  statusBarItem.text = `Franken UI: ${currentVersion.version}`;
+  statusBarItem.tooltip = "Click to change Franken UI version";
+  statusBarItem.command = "franken-ui.selectVersion";
+  statusBarItem.show();
+  context.subscriptions.push(statusBarItem);
+
+  // Register command to select version manually
+  context.subscriptions.push(
+    vscode.commands.registerCommand("franken-ui.selectVersion", async () => {
+      const versions = ["2.1"];
+      const selected = await vscode.window.showQuickPick(versions, {
+        placeHolder: "Select Franken UI version",
+      });
+
+      if (selected) {
+        // Update version and reload data
+        currentVersion = {
+          version: selected,
+          components: `components-${selected}.json`,
+          selectors: `selectors-${selected}.json`,
+        };
+
+        const newData = await reloadData(context, currentVersion);
+        currentComponents = newData.components;
+        currentCssClasses = newData.cssClasses;
+
+        // Update status bar
+        statusBarItem.text = `Franken UI: ${currentVersion.version}`;
+
+        vscode.window.showInformationMessage(
+          `Franken UI version set to ${selected}`
+        );
+      }
+    })
+  );
+
+  // Register command to check extension status
+  context.subscriptions.push(
+    vscode.commands.registerCommand("franken-ui.showStatus", () => {
+      vscode.window.showInformationMessage(
+        `Franken UI extension is active! Using version ${
+          currentVersion?.version || "unknown"
+        }`
+      );
+    })
+  );
+
+  console.log("Franken UI extension is now active!");
 }
 
-// This method is called when your extension is deactivated
+// Function to register providers with access to the current data
+function registerProviders(context: vscode.ExtensionContext) {
+  // Create a language selector for all supported HTML-like languages
+  const htmlLikeLanguages = [
+    "html",
+    "latte",
+    "blade",
+    "twig",
+    "php",
+    "smarty",
+    "razor",
+    "django-html",
+    "jinja",
+    "erb",
+    "liquid",
+    "handlebars",
+    "mustache",
+    "ejs",
+    "vue",
+    "svelte",
+    "astro",
+  ];
+
+  // Component completion provider
+  const componentProvider = new ComponentCompletionProvider(
+    () => currentComponents
+  );
+  context.subscriptions.push(
+    vscode.languages.registerCompletionItemProvider(
+      htmlLikeLanguages.map((lang) => ({ scheme: "file", language: lang })),
+      componentProvider,
+      "<"
+    )
+  );
+
+  // Component attribute completion provider
+  const attributeProvider = new ComponentAttributeCompletionProvider(
+    () => currentComponents
+  );
+  context.subscriptions.push(
+    vscode.languages.registerCompletionItemProvider(
+      htmlLikeLanguages.map((lang) => ({ scheme: "file", language: lang })),
+      attributeProvider,
+      " ",
+      "="
+    )
+  );
+
+  // CSS class completion provider
+  const cssClassProvider = new CSSClassCompletionProvider(
+    () => currentCssClasses
+  );
+  context.subscriptions.push(
+    vscode.languages.registerCompletionItemProvider(
+      htmlLikeLanguages.map((lang) => ({ scheme: "file", language: lang })),
+      cssClassProvider,
+      '"',
+      "'",
+      " "
+    )
+  );
+
+  // CSS class hover provider
+  const cssHoverProvider = new CSSClassHoverProvider(() => currentCssClasses);
+  context.subscriptions.push(
+    vscode.languages.registerHoverProvider(
+      htmlLikeLanguages.map((lang) => ({ scheme: "file", language: lang })),
+      cssHoverProvider
+    )
+  );
+
+  // Component hover provider for uk-* components
+  const componentHoverProvider = new ComponentHoverProvider(
+    () => currentComponents
+  );
+  context.subscriptions.push(
+    vscode.languages.registerHoverProvider(
+      htmlLikeLanguages.map((lang) => ({ scheme: "file", language: lang })),
+      componentHoverProvider
+    )
+  );
+
+  // Component attribute hover provider
+  const componentAttributeHoverProvider = new ComponentAttributeHoverProvider(
+    () => currentComponents
+  );
+  context.subscriptions.push(
+    vscode.languages.registerHoverProvider(
+      htmlLikeLanguages.map((lang) => ({ scheme: "file", language: lang })),
+      componentAttributeHoverProvider
+    )
+  );
+}
+
 export function deactivate() {}
